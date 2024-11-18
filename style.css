@@ -1,0 +1,94 @@
+.jumbotron {
+  padding: 6rem 1rem;
+  background-color: #eeffd8;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+/* About Me Section Styling */
+#about {
+  background-color: #eeffd8;
+}
+
+#about h2 {
+  color: #124d00;
+}
+
+#about .about-card {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about .about-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#about .card-body {
+  padding: 30px;
+}
+
+#about .card-title {
+  font-size: 1.5rem;
+  color: #124d00;
+}
+
+#about ul {
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+#about ul li {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* SVG Styling */
+#about svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* About Card Styling */
+.about-card {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.about-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Styling */
+/*.modal-body img {
+  border: 1px solid #124d00;
+}*/
+
+.modal-content {
+  border-radius: 15px;
+}
+
+/* Contact Me Section Styling */
+.social-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #124d00;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #0d3700;
+  transform: scale(1.1);
+}
