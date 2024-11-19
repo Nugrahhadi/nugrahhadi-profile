@@ -1,6 +1,11 @@
 .jumbotron {
   padding: 6rem 1rem;
-  background-color: #eeffd8;
+  background: linear-gradient(0deg, #124d00, #eeffd8);
+  color: white;
+  padding: 100px 20px;
+  margin: 0px auto;
+  border-radius: 15px;
+  padding-top: 150px;
 }
 
 section {
