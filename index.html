@@ -14,6 +14,11 @@
     />
 
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
@@ -91,19 +96,24 @@
             projects.<br />
             Feel free to get in touch with me!
           </p>
-          <div class="contact-info">
+          <!--<div class="contact-info">
             <div class="contact-item">
-              <a href="tel:+6281287787857">📞 +62 812 8778 7857</a>
+              <a href="tel:+6281287787857">
+                <i class="bi bi-telephone-fill"></i>+62 812 8778 7857</a
+              >
             </div>
             <div class="contact-item">
-              <a href="nugrahhadi11@gmail.com">✉️ nugrahhadi11@gmail.com</a>
+              <a
+                href="mailto:nugrahhadi11@gmail.com?subject=Hello Nugross&body=I would like to collaborate with you!"
+                ><i class="bi bi-envelope-fill"></i>nugrahhadi11@gmail.com</a
+              >
             </div>
             <div class="contact-item">
               <a href="https://www.instagram.com/hadinugross_/" target="_blank"
-                >📷 @hadinugross_</a
+                ><i class="bi bi-instagram"></i>@hadinugross_</a
               >
             </div>
-          </div>
+          </div>-->
         </div>
         <div class="profile">
           <img
@@ -111,6 +121,26 @@
             alt="Profile Picture"
             class="profile-image"
           />
+          <div class="contact-info">
+            <div class="contact-item">
+              <a
+                href="https://wa.me/6281287787857?text=Hello%20Nugross,%20I%20would%20like%20to%20collaborate%20with%20you!"
+              >
+                <i class="bi bi-telephone-fill"></i>+62 812 8778 7857</a
+              >
+            </div>
+            <div class="contact-item">
+              <a
+                href="mailto:nugrahhadi11@gmail.com?subject=Hello Nugross&body=I would like to collaborate with you!"
+                ><i class="bi bi-envelope-fill"></i>nugrahhadi11@gmail.com</a
+              >
+            </div>
+            <div class="contact-item">
+              <a href="https://www.instagram.com/hadinugross_/" target="_blank"
+                ><i class="bi bi-instagram"></i>@hadinugross_</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -191,6 +221,46 @@
     </section>
     <!--Gallery End-->
 
+    <!-- Full gallery Section Start-->
+    <section id="gmodal" class="gallery-modal">
+      <div id="tentang">
+        <div class="tentang-left">
+          In a world full of noise, WinNews amplifies the voices that matter. We
+          are a media platform committed to delivering truth through honest &
+          authentic voices that empower generations. Using the dynamic voices of
+          our creators
+        </div>
+        <div class="tentang-right">
+          we bring stories to life—personal, relatable, and real. Many speak,
+          but few stand out. At WinNews, we spotlight those voices grounded in
+          honesty, making sure the truth is always heard. This is the voice of
+          WinNews.
+        </div>
+      </div>
+
+      <!-- Photo Buttons -->
+      <section id="photos">
+        <div>
+          <button class="photo-btn" data-type="product">Product</button>
+          <button class="photo-btn" data-type="model">Model</button>
+          <button class="photo-btn" data-type="food">Food</button>
+          <button class="photo-btn" data-type="nature">Nature</button>
+        </div>
+      </section>
+
+      <!-- Story Section -->
+      <div id="story">Stories in Every Snapshot</div>
+
+      <!-- Modal -->
+      <div id="photoModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="photoGallery"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Full gallery Section Start-->
+
     <!--Contact Start-->
 
     <!--Contact End-->
@@ -247,6 +317,56 @@
             navLinks.forEach((link) => link.classList.remove("active"));
             this.classList.add("active");
           });
+        });
+      });
+
+      /*Modal Gallery Script*/
+      document.addEventListener("DOMContentLoaded", () => {
+        const photos = {
+          product: [
+            "img/gallery/1.jpg",
+            "img/gallery/olate.png",
+            "img/gallery/parfum.png",
+          ],
+          model: [
+            "img/gallery/fashion.png",
+            "img/gallery/boxing.png",
+            "img/gallery/shirt.png",
+          ],
+          food: [
+            "img/gallery/spageti.png",
+            "img/gallery/kimchi.png",
+            "img/gallery/keripik.png",
+          ],
+          nature: [
+            "https://via.placeholder.com/300x400?text=Dynamic+1",
+            "https://via.placeholder.com/300x400?text=Dynamic+2",
+            "https://via.placeholder.com/300x400?text=Dynamic+3",
+          ],
+        };
+
+        const modal = document.getElementById("photoModal");
+        const closeBtn = modal.querySelector(".close");
+        const photoGallery = document.getElementById("photoGallery");
+
+        document.querySelectorAll(".photo-btn").forEach((button) => {
+          button.addEventListener("click", () => {
+            const type = button.getAttribute("data-type");
+            photoGallery.innerHTML = photos[type]
+              .map((src) => `<img src="${src}" alt="${type} photo">`)
+              .join("");
+            modal.style.display = "block";
+          });
+        });
+
+        closeBtn.addEventListener("click", () => {
+          modal.style.display = "none";
+        });
+
+        window.addEventListener("click", (event) => {
+          if (event.target === modal) {
+            modal.style.display = "none";
+          }
         });
       });
     </script>
