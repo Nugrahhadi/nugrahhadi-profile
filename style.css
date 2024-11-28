@@ -219,6 +219,46 @@
   line-height: 1.6;
 }
 
+/*logo perusahaan*/
+.section-bridging {
+  text-align: center;
+  margin: 2rem 0 1.5rem;
+}
+
+.section-bridging h2 {
+  color: #bf7fff;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.section-bridging p {
+  color: #999;
+  font-size: 18px;
+}
+
+.logo-section {
+  margin-top: 10px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.company-logo {
+  width: 280px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.company-logo:hover {
+  transform: translateY(-5px);
+}
+
 /* Gallery Opening Section */
 .gallery-intro {
   background-color: #111;
@@ -388,6 +428,8 @@
   aspect-ratio: 3 / 4;
   margin: 10px;
   border: 2px solid #ad5aff;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Story Section */
@@ -397,6 +439,178 @@
   font-size: 20px;
   color: #b265ff;
   text-transform: uppercase;
+}
+
+/*contact*/
+.contact-section {
+  background-color: #111;
+  padding: 80px 0;
+  color: #fff;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.contact-header h1 {
+  font-size: 3.3rem;
+  background: linear-gradient(45deg, #8000ff, #a64dfe, #d8b1ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 1rem;
+}
+
+.contact-header p {
+  color: #999;
+  font-size: 1.1rem;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.contact-info-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.contact-card i {
+  font-size: 2rem;
+  color: #bf7fff;
+  margin-bottom: 1rem;
+}
+
+.contact-card h3 {
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.contact-card p {
+  color: #999;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #bf7fff;
+}
+
+.contact-form button {
+  padding: 1rem 2rem;
+  background: #a64dfe;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #bf7fff;
+}
+
+/*Footer*/
+.footer {
+  background-color: #111;
+  padding: 4rem 0 2rem;
+  color: #fff;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-brand h2 {
+  color: #bf7fff;
+  margin-bottom: 1rem;
+}
+
+.footer-brand p {
+  color: #999;
+}
+
+.footer-social h3,
+.footer-contact h3 {
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  color: #bf7fff;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+}
+
+.footer-contact p {
+  color: #999;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-contact i {
+  color: #bf7fff;
+}
+
+.footer-bottom {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #999;
 }
 
 /* Animasi */
@@ -448,6 +662,35 @@
     padding: 20px 15px;
     margin: 10px;
     max-width: 85%;
+  }
+
+  .intro-content h1 {
+    font-size: 2rem;
+  }
+  .about-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .contact-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-contact p {
+    justify-content: center;
   }
 }
 
