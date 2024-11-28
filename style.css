@@ -342,6 +342,23 @@
   text-align: center;
 }
 
+.section-intro {
+  text-align: center;
+  padding: 4rem 0 1rem;
+}
+
+.section-intro h3 {
+  color: #bf7fff;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.section-intro p {
+  color: #999;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
 #tentang {
   display: flex;
   justify-content: center;
@@ -352,7 +369,7 @@
   max-width: 1000px;
   margin: auto;
   text-align: left;
-  border-bottom: 1px solid grey;
+  /*border-bottom: 1px solid grey;*/
 }
 
 .tentang-left,
@@ -430,15 +447,6 @@
   border: 2px solid #ad5aff;
   max-width: 100%;
   height: auto;
-}
-
-/* Story Section */
-#story {
-  font-weight: bold;
-  margin-top: 40px;
-  font-size: 20px;
-  color: #b265ff;
-  text-transform: uppercase;
 }
 
 /*contact*/
