@@ -408,16 +408,12 @@
 
     <!-- Script Start -->
     <script>
-      // Tunggu sampai DOM selesai loading
       document.addEventListener("DOMContentLoaded", function () {
-        // Ambil semua nav links
         const navLinks = document.querySelectorAll(".nav-link");
 
-        // Fungsi untuk mengupdate active state
         function setActiveLink() {
           const hash = window.location.hash || "#home";
 
-          // Hapus class active dari semua link
           navLinks.forEach((link) => {
             link.classList.remove("active");
             if (link.getAttribute("href") === hash) {
@@ -425,11 +421,8 @@
             }
           });
         }
-
-        // Set active state saat halaman load
         setActiveLink();
 
-        // Set active state saat scroll
         window.addEventListener("scroll", function () {
           const sections = document.querySelectorAll("section");
           let current = "";
@@ -450,7 +443,6 @@
           });
         });
 
-        // Update active state saat klik
         navLinks.forEach((link) => {
           link.addEventListener("click", function (e) {
             navLinks.forEach((link) => link.classList.remove("active"));
@@ -459,7 +451,7 @@
         });
       });
 
-      /*Modal Gallery Script*/
+
       document.addEventListener("DOMContentLoaded", () => {
         const photos = {
           product: [
@@ -478,9 +470,9 @@
             "img/gallery/keripik.png",
           ],
           nature: [
-            "https://via.placeholder.com/300x400?text=Dynamic+1",
-            "https://via.placeholder.com/300x400?text=Dynamic+2",
-            "https://via.placeholder.com/300x400?text=Dynamic+3",
+            "https://via.placeholder.com/300x400?text=Nature+1",
+            "https://via.placeholder.com/300x400?text=Nature+2",
+            "https://via.placeholder.com/300x400?text=Nature+3",
           ],
         };
 
