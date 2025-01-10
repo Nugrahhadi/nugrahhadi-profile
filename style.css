@@ -1,5 +1,5 @@
 .navbar-nav .nav-link.active {
-  color: #bf7fff !important; 
+  color: #bf7fff !important;
 }
 
 .navbar-nav .nav-link:hover {
@@ -55,10 +55,7 @@
 
 #home .tags {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(130px, 1fr)
-  ); 
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   row-gap: 1rem;
   margin-bottom: 2rem;
 }
@@ -70,13 +67,13 @@
   text-align: center;
   font-size: 0.9rem;
   color: #ccc;
-  width: 130px; 
+  width: 130px;
   height: 36px;
-  display: flex; 
+  display: flex;
   align-items: center;
-  justify-content: center; 
-  margin: 0 auto; 
-  white-space: nowrap; 
+  justify-content: center;
+  margin: 0 auto;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -117,8 +114,8 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1.5rem;
-  justify-content: center; 
-  text-align: center; 
+  justify-content: center;
+  text-align: center;
   color: #999;
 }
 
@@ -134,7 +131,7 @@
 }
 
 .contact-item a:hover {
-  color: #bf7fff; 
+  color: #bf7fff;
 }
 
 /* About Section Styles */
@@ -170,7 +167,7 @@
   color: #999;
   font-size: 1.1rem;
   line-height: 1.6;
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -826,19 +823,19 @@
   }
 
   #photoGallery img {
-    width: 100%; 
+    width: 100%;
     margin: 10px 0;
-    aspect-ratio: 3/4; 
+    aspect-ratio: 3/4;
     border: 2px solid #ad5aff;
     max-width: 100%;
     height: auto;
   }
 
   .modal-content {
-    width: 90%; 
-    max-height: 80vh; 
+    width: 90%;
+    max-height: 80vh;
     overflow-y: auto;
-    padding: 15px; 
+    padding: 15px;
   }
 
   .modal-content .close {
@@ -946,7 +943,7 @@
     gap: 2rem;
   }
 
-  .tentang-left, 
+  .tentang-left,
   .tentang-right {
     padding: 1.5rem;
     background: rgba(255, 255, 255, 0.05);
@@ -955,7 +952,7 @@
     transition: transform 0.3s ease;
   }
 
-  .tentang-left:hover, 
+  .tentang-left:hover,
   .tentang-right:hover {
     transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.08);
@@ -993,16 +990,16 @@
 
   #photos div {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     width: 100%;
-    max-width: 320px; 
+    max-width: 320px;
   }
 
   #photos button {
     width: 100%;
     padding: 12px 0;
-    margin: 0; 
+    margin: 0;
     font-size: 16px;
     border: 2px solid #ad5aff;
     background: #171515;
@@ -1028,7 +1025,6 @@
     justify-content: center;
   }
 }
-
 
 @media (max-width: 480px) {
   .gallery-intro {
