@@ -29,8 +29,6 @@
   padding-top: 2rem;
   padding-bottom: 0.2em;
   line-height: 1.2;
-
-  /* Gradient styling */
   background: linear-gradient(to right, #7d7d7d, #ababab, #c9c9c9);
   -webkit-background-clip: text;
   background-clip: text;
