@@ -1,0 +1,1071 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Muhammad Nugrahhadi Al Khawarizmi</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="portfolio1.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </head>
+  <body>
+    <a href="index.html#portfolio" class="back-button">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M10 19l-7-7m0 0l7-7m-7 7h18"
+        />
+      </svg>
+      Kembali ke Portfolio
+    </a>
+
+    <div class="container">
+      <header>
+        <h1>
+          Portfolio
+          <span class="highlight">Muhammad Nugrahhadi Al Khawarizmi</span>
+        </h1>
+        <p class="tagline">
+          My expertise is not just about knowledge, it's about applying it to
+          real-world problems. I understand client needs and develop solutions
+          tailored to their requirements.
+        </p>
+      </header>
+
+      <!-- Focus Areas Section -->
+      <section class="focus-section">
+        <div class="focus-title">
+          <h2>The Fields I<span class="highlight"> Focus On</span></h2>
+        </div>
+
+        <div class="focus-areas">
+          <div class="focus-card">
+            <img src="img/focus/dataAnalyst.webp" alt="Data Analyst" />
+            <div class="focus-card-content">
+              <h3>Data Analyst</h3>
+              <p>
+                We provide comprehensive data solutions that help organizations
+                of all sizes to manage, analyze, and use their data effectively.
+              </p>
+            </div>
+          </div>
+
+          <div class="focus-card">
+            <img src="img/focus/sosmed.jpg" alt="Social Media Specialist" />
+            <div class="focus-card-content">
+              <h3>Social Media Specialist</h3>
+              <p>
+                Future Finance offers a range of financial planning services to
+                help you achieve your goals, whether it's investment or
+                providing solutions designed for your specific needs.
+              </p>
+            </div>
+          </div>
+
+          <div class="focus-card">
+            <img src="img/focus/entrepreneur.webp" alt="Entrepreneur" />
+            <div class="focus-card-content">
+              <h3>Entrepreneur</h3>
+              <p>
+                Future Automation offers comprehensive automation solutions
+                designed to help your business, improve workflow, so you focus
+                on more important things.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Sections -->
+      <section class="portfolio-section">
+        <div class="section-heading">
+          <h2>Check out my <span class="highlight">latest work</span></h2>
+          <p class="tagline">
+            I’ve worked on various projects, ranging from simple websites to
+            complex websites. Additionally, I also work on UI/UX Design for
+            Websites and Mobile Apps. In my spare time, I do photoshoots for
+            product brands, models, food, and nature. Here are some of my
+            favorite projects.
+          </p>
+        </div>
+
+        <!-- Portfolio Tabs -->
+        <div class="portfolio-tabs">
+          <!-- <button class="portfolio-tab active" data-filter="all">All</button> -->
+          <button class="portfolio-tab active" data-filter="web">
+            Websites
+          </button>
+          <button class="portfolio-tab" data-filter="uiux">UI/UX</button>
+          <button class="portfolio-tab" data-filter="photo">Photography</button>
+        </div>
+
+        <!-- Portfolio Page 1 — Clients (1–5) + First University -->
+        <div class="portfolio-page active" data-page="1">
+          <!-- Card 1 · PT Archipelago · Client -->
+          <div
+            class="portfolio-card"
+            data-category="web"
+            data-project-id="archipelago"
+          >
+            <div class="portfolio-card-image">
+              <div
+                class="portfolio-magnify"
+                onclick="openImageModal('img/website/archipelago.png')"
+              >
+                <i class="fas fa-search-plus"></i>
+              </div>
+              <img
+                src="img/website/archipelago.png"
+                alt="PT Archipelago Media Komunikasi"
+              />
+            </div>
+            <div class="portfolio-card-body">
+              <h3 class="portfolio-card-title">
+                PT Archipelago Media Komunikasi
+                <span class="portfolio-card-category">Website</span>
+              </h3>
+              <div class="portfolio-card-date">Jan 2025 - Feb 2025</div>
+              <span class="portfolio-card-keterangan keterangan-client"
+                >Client Project</span
+              >
+              <p class="portfolio-card-description">
+                Company profile website for a media company in South Tangerang,
+                serving as the company's professional digital face.
+              </p>
+              <div class="portfolio-card-tech">
+                <span class="tech-badge tech-html"
+                  ><i class="fab fa-html5"></i> HTML</span
+                >
+                <span class="tech-badge tech-css"
+                  ><i class="fab fa-css3"></i> CSS</span
+                >
+                <span class="tech-badge tech-js"
+                  ><i class="fab fa-js"></i> JavaScript</span
+                >
+              </div>
+              <div class="portfolio-card-links">
+                <a
+                  href="https://nugrahhadi.github.io/Archipelagocs/"
+                  class="card-btn card-btn-primary"
+                  target="_blank"
+                >
+                  <i class="fas fa-globe"></i> Live Demo
+                </a>
+                <a
+                  href="https://github.com/Nugrahhadi/Archipelagocs.git"
+                  class="card-btn card-btn-primary"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i> Source
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 · Ricocapital · Client -->
+          <div
+            class="portfolio-card"
+            data-category="web"
+            data-project-id="ricocapital"
+          >
+            <div class="portfolio-card-image">
+              <div
+                class="portfolio-magnify"
+                onclick="openImageModal('img/website/Ricocapital.webp')"
+              >
+                <i class="fas fa-search-plus"></i>
+              </div>
+              <img src="img/website/Ricocapital.webp" alt="Ricocapital" />
+            </div>
+            <div class="portfolio-card-body">
+              <h3 class="portfolio-card-title">
+                Ricocapital
+                <span class="portfolio-card-category">Website</span>
+              </h3>
+              <div class="portfolio-card-date">Jun 2024 - Aug 2024</div>
+              <span class="portfolio-card-keterangan keterangan-client"
+                >Client Project</span
+              >
+              <p class="portfolio-card-description">
+                Full-stack financial services website with Laravel Inertia SPA
+                architecture and Midtrans payment gateway integration.
+              </p>
+              <div class="portfolio-card-tech">
+                <span class="tech-badge tech-laravel"
+                  ><i class="fab fa-laravel"></i> Laravel</span
+                >
+                <span class="tech-badge tech-inertia"
+                  ><i class="fas fa-layer-group"></i> Inertia</span
+                >
+                <span class="tech-badge tech-tailwind">
+                  <iconify-icon
+                    icon="simple-icons:tailwindcss"
+                    width="16.5"
+                    height="16.5"
+                    style="vertical-align: middle; margin-right: 1px"
+                  ></iconify-icon>
+                  TailwindCSS
+                </span>
+                <span class="tech-badge tech-typescript">
+                  <iconify-icon
+                    icon="simple-icons:typescript"
+                    width="16.5"
+                    height="16.5"
+                    style="vertical-align: middle; margin-right: 1px"
+                  ></iconify-icon>
+                  TypeScript
+                </span>
+                <span class="tech-badge tech-mysql"
+                  ><i class="fas fa-database"></i> MySQL</span
+                >
+                <span class="tech-badge tech-midtrans"
+                  ><i class="fas fa-credit-card"></i> Midtrans</span
+                >
+              </div>
+              <div class="portfolio-card-links">
+                <a
+                  href="https://ricocapital.id/"
+                  class="card-btn card-btn-primary"
+                  target="_blank"
+                >
+                  <i class="fas fa-globe"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 · PT Zetta · Client -->
+          <div
+            class="portfolio-card"
+            data-category="web"
+            data-project-id="zetta"
+          >
+            <div class="portfolio-card-image">
+              <div
+                class="portfolio-magnify"
+                onclick="openImageModal('img/website/zetta.png')"
+              >
+                <i class="fas fa-search-plus"></i>
+              </div>
+              <img
+                src="img/website/zetta.png"
+                alt="PT Zetta Kreatif Indonesia"
+              />
+            </div>
+            <div class="portfolio-card-body">
+              <h3 class="portfolio-card-title">
+                PT Zetta Kreatif Indonesia
+                <span class="portfolio-card-category">Website</span>
+              </h3>
+              <div class="portfolio-card-date">Jun 2023 - Jul 2023</div>
+              <span class="portfolio-card-keterangan keterangan-client"
+                >Client Project</span
+              >
+              <p class="portfolio-card-description">
+                Company profile website for a creative agency, showcasing their
+                portfolio, services, and team on WordPress.
+              </p>
+              <div class="portfolio-card-tech">
+                <span class="tech-badge tech-wordpress"
+                  ><i class="fab fa-wordpress"></i> WordPress</span
+                >
+              </div>
+              <div class="portfolio-card-links">
+                <a href="#" class="card-btn card-btn-primary" target="_blank">
+                  <i class="fas fa-globe"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 · Toko Pinjam · Client -->
+          <div
+            class="portfolio-card"
+            data-category="web"
+            data-project-id="tokopinjam"
+          >
+            <div class="portfolio-card-image">
+              <div
+                class="portfolio-magnify"
+                onclick="openImageModal('img/website/toko-pinjam.webp')"
+              >
+                <i class="fas fa-search-plus"></i>
+              </div>
+              <img src="img/website/toko-pinjam.webp" alt="Toko Pinjam" />
+            </div>
+            <div class="portfolio-card-body">
+              <h3 class="portfolio-card-title">
+                Toko Pinjam
+                <span class="portfolio-card-category">Website</span>
+              </h3>
+              <div class="portfolio-card-date">Jul 2025 - Aug 2025</div>
+              <span class="portfolio-card-keterangan keterangan-client"
+                >Client Project</span
+              >
+              <p class="portfolio-card-description">
+                A rental platform that connects borrowers and lenders for
+                everyday items, built with a modern Laravel stack.
+              </p>
+              <div class="portfolio-card-tech">
+                <span class="tech-badge tech-laravel"
+                  ><i class="fab fa-laravel"></i> Laravel</span
+                >
+                <span class="tech-badge tech-inertia"
+                  ><i class="fas fa-layer-group"></i> Inertia</span
+                >
+                <span class="tech-badge tech-tailwind">
+                  <iconify-icon
+                    icon="simple-icons:tailwindcss"
+                    width="16.5"
+                    height="16.5"
+                    style="vertical-align: middle; margin-right: 1px"
+                  ></iconify-icon>
+                  TailwindCSS
+                </span>
+              </div>
+              <div class="portfolio-card-links">
+                <a href="#" class="card-btn card-btn-primary" target="_blank">
+                  <i class="fas fa-globe"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 · Kalanoia Coffee · Client -->
+          <div
+            class="portfolio-card"
+            data-category="web"
+            data-project-id="kalanoia"
+          >
+            <div class="portfolio-card-image">
+              <div
+                class="portfolio-magnify"
+                onclick="openImageModal('img/website/kalanoia.png')"
+              >
+                <i class="fas fa-search-plus"></i>
+              </div>
+              <img src="img/website/kalanoia.png" alt="Kalanoia Coffee" />
+            </div>
+            <div class="portfolio-card-body">
+              <h3 class="portfolio-card-title">
+                Kalanoia Coffee
+                <span class="portfolio-card-category">Website</span>
+              </h3>
+              <div class="portfolio-card-date">2025</div>
+              <span class="portfolio-card-keterangan keterangan-client"
+                >Client Project</span
+              >
+              <p class="portfolio-card-description">
+                A landing page and online catalog website for a local coffee
+                brand, showcasing their menu and story.
+              </p>
+              <div class="portfolio-card-tech">
+                <span class="tech-badge tech-html"
+                  ><i class="fab fa-html5"></i> HTML</span
+                >
+                <span class="tech-badge tech-css"
+                  ><i class="fab fa-css3"></i> CSS</span
+                >
+                <span class="tech-badge tech-js"
+                  ><i class="fab fa-js"></i> JavaScript</span
+                >
+              </div>
+              <div class="portfolio-card-links">
+                <a href="#" class="card-btn card-btn-primary" target="_blank">
+                  <i class="fas fa-globe"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 · YAHAYU · University -->
+          <div
+            class="portfolio-card"
+            data-category="web"
+            data-project-id="yahayu"
+          >
+            <div class="portfolio-card-image">
+              <div
+                class="portfolio-magnify"
+                onclick="openImageModal('img/website/yahayu.png')"
+              >
+                <i class="fas fa-search-plus"></i>
+              </div>
+              <img src="img/website/yahayu.png" alt="YAHAYU" />
+            </div>
+            <div class="portfolio-card-body">
+              <h3 class="portfolio-card-title">
+                YAHAYU - Brazilian Tourist Destinations
+                <span class="portfolio-card-category">Website</span>
+              </h3>
+              <div class="portfolio-card-date">Nov 2024 - Dec 2024</div>
+              <span class="portfolio-card-keterangan keterangan-university"
+                >University Project</span
+              >
+              <p class="portfolio-card-description">
+                Yahayu makes it easy to book tickets for popular tourist
+                attractions and hidden gems in Brazil, with booking and payment
+                features.
+              </p>
+              <div class="portfolio-card-tech">
+                <span class="tech-badge tech-html"
+                  ><i class="fab fa-html5"></i> HTML</span
+                >
+                <span class="tech-badge tech-css"
+                  ><i class="fab fa-css3"></i> CSS</span
+                >
+                <span class="tech-badge tech-js"
+                  ><i class="fab fa-js"></i> JavaScript</span
+                >
+                <span class="tech-badge tech-php"
+                  ><i class="fab fa-php"></i> PHP</span
+                >
+                <span class="tech-badge tech-mysql"
+                  ><i class="fas fa-database"></i> MySQL</span
+                >
+              </div>
+              <div class="portfolio-card-links">
+                <a
+                  href="https://github.com/Nugrahhadi/YAHAYU.git"
+                  class="card-btn card-btn-primary"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i> Source
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page 1 -->
+
+        <!-- Portfolio Page 2 — University (cont.) + Personal -->
+        <div class="portfolio-page" data-page="2">
+          <!-- Card 7 · Smart Parking · University -->
+          <div
+            class="portfolio-card"
+            data-category="web"
+            data-project-id="smartparking"
+          >
+            <div class="portfolio-card-image">
+              <div
+                class="portfolio-magnify"
+                onclick="openImageModal('img/website/SmartParking.png')"
+              >
+                <i class="fas fa-search-plus"></i>
+              </div>
+              <img
+                src="img/website/SmartParking.png"
+                alt="Smart Parking System"
+              />
+            </div>
+            <div class="portfolio-card-body">
+              <h3 class="portfolio-card-title">
+                Smart Parking System
+                <span class="portfolio-card-category">Website</span>
+              </h3>
+              <div class="portfolio-card-date">April 2025</div>
+              <span class="portfolio-card-keterangan keterangan-university"
+                >University Project</span
+              >
+              <p class="portfolio-card-description">
+                Real-time smart parking management system with React, including
+                a Python-powered license plate camera tracking module.
+              </p>
+              <div class="portfolio-card-tech">
+                <span class="tech-badge tech-react"
+                  ><i class="fab fa-react"></i> React</span
+                >
+                <span class="tech-badge tech-tailwind">
+                  <iconify-icon
+                    icon="simple-icons:tailwindcss"
+                    width="16.5"
+                    height="16.5"
+                    style="vertical-align: middle; margin-right: 1px"
+                  ></iconify-icon>
+                  TailwindCSS
+                </span>
+                <span class="tech-badge tech-js"
+                  ><i class="fab fa-js"></i> JavaScript</span
+                >
+                <span class="tech-badge tech-mysql"
+                  ><i class="fas fa-database"></i> MySQL</span
+                >
+                <span class="tech-badge tech-python"
+                  ><i class="fab fa-python"></i> Python</span
+                >
+              </div>
+              <div class="portfolio-card-links">
+                <a
+                  href="https://github.com/Nugrahhadi/smart-parking.git"
+                  class="card-btn card-btn-primary"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i> Source
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8 · Matrix & SPL Solver · University -->
+          <div class="portfolio-card" data-category="web" data-project-id="spl">
+            <div class="portfolio-card-image">
+              <div
+                class="portfolio-magnify"
+                onclick="openImageModal('img/website/spl.png')"
+              >
+                <i class="fas fa-search-plus"></i>
+              </div>
+              <img src="img/website/spl.png" alt="Matrix & SPL Solver" />
+            </div>
+            <div class="portfolio-card-body">
+              <h3 class="portfolio-card-title">
+                Matrix & SPL Solver
+                <span class="portfolio-card-category">Website</span>
+              </h3>
+              <div class="portfolio-card-date">Okt 2024 - Nov 2024</div>
+              <span class="portfolio-card-keterangan keterangan-university"
+                >University Project</span
+              >
+              <p class="portfolio-card-description">
+                Browser-based math tool that solves systems of linear equations
+                and performs matrix operations with step-by-step display.
+              </p>
+              <div class="portfolio-card-tech">
+                <span class="tech-badge tech-html"
+                  ><i class="fab fa-html5"></i> HTML</span
+                >
+                <span class="tech-badge tech-css"
+                  ><i class="fab fa-css3"></i> CSS</span
+                >
+                <span class="tech-badge tech-js"
+                  ><i class="fab fa-js"></i> JavaScript</span
+                >
+              </div>
+              <div class="portfolio-card-links">
+                <a
+                  href="https://nugrahhadi.github.io/Proyek-Aljabar-Linear/"
+                  class="card-btn card-btn-primary"
+                  target="_blank"
+                >
+                  <i class="fas fa-globe"></i> Live Demo
+                </a>
+                <a
+                  href="https://github.com/Nugrahhadi/Proyek-Aljabar-Linear.git"
+                  class="card-btn card-btn-primary"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i> Source
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 9 · Coca-Cola Commerce · Personal -->
+          <div
+            class="portfolio-card"
+            data-category="web"
+            data-project-id="cocacola"
+          >
+            <div class="portfolio-card-image">
+              <div
+                class="portfolio-magnify"
+                onclick="openImageModal('img/website/coca-cola.png')"
+              >
+                <i class="fas fa-search-plus"></i>
+              </div>
+              <img src="img/website/coca-cola.png" alt="Coca-Cola Commerce" />
+            </div>
+            <div class="portfolio-card-body">
+              <h3 class="portfolio-card-title">
+                Coca-Cola Commerce
+                <span class="portfolio-card-category">Website</span>
+              </h3>
+              <div class="portfolio-card-date">Aug 2024 - Sep 2024</div>
+              <span class="portfolio-card-keterangan keterangan-personal"
+                >Personal Project</span
+              >
+              <p class="portfolio-card-description">
+                E-commerce website themed around Coca-Cola branding with full
+                product listing, cart, and order management.
+              </p>
+              <div class="portfolio-card-tech">
+                <span class="tech-badge tech-html"
+                  ><i class="fab fa-html5"></i> HTML</span
+                >
+                <span class="tech-badge tech-bootstrap"
+                  ><i class="fab fa-bootstrap"></i> Bootstrap</span
+                >
+                <span class="tech-badge tech-js"
+                  ><i class="fab fa-js"></i> JavaScript</span
+                >
+                <span class="tech-badge tech-php"
+                  ><i class="fab fa-php"></i> PHP</span
+                >
+              </div>
+              <div class="portfolio-card-links">
+                <a
+                  href="https://github.com/Nugrahhadi/Coca-Cola-Website.git"
+                  class="card-btn card-btn-primary"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i> Source
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 10 · Maggenzim · Personal -->
+          <div
+            class="portfolio-card"
+            data-category="web"
+            data-project-id="maggenzim"
+          >
+            <div class="portfolio-card-image">
+              <div
+                class="portfolio-magnify"
+                onclick="openImageModal('img/website/Maggenzim.webp')"
+              >
+                <i class="fas fa-search-plus"></i>
+              </div>
+              <img src="img/website/Maggenzim.webp" alt="Maggenzim" />
+            </div>
+            <div class="portfolio-card-body">
+              <h3 class="portfolio-card-title">
+                Maggenzim
+                <span class="portfolio-card-category">Website</span>
+              </h3>
+              <div class="portfolio-card-date">Jul 2025 - Aug 2025</div>
+              <span class="portfolio-card-keterangan keterangan-personal"
+                >Personal Project</span
+              >
+              <p class="portfolio-card-description">
+                A personal project exploring bio-enzyme product management and
+                distribution workflows, built with Laravel.
+              </p>
+              <div class="portfolio-card-tech">
+                <span class="tech-badge tech-laravel"
+                  ><i class="fab fa-laravel"></i> Laravel</span
+                >
+                <span class="tech-badge tech-inertia"
+                  ><i class="fas fa-layer-group"></i> Inertia</span
+                >
+              </div>
+              <div class="portfolio-card-links">
+                <a href="#" class="card-btn card-btn-primary" target="_blank">
+                  <i class="fas fa-globe"></i> Live Demo
+                </a>
+                <a href="#" class="card-btn card-btn-primary" target="_blank">
+                  <i class="fab fa-github"></i> Source
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page 2 -->
+
+        <!-- Photography Portfolio Section -->
+        <div id="photography-container" class="portfolio-container">
+          <div class="portfolio-grid-photo">
+            <!-- Photography Projects -->
+            <div
+              class="portfolio-item"
+              data-category="photo"
+              data-modal="foodModal"
+            >
+              <img src="img/gallery/kimchi.png" alt="Food Photography" />
+              <div class="portfolio-category">Food</div>
+              <div class="portfolio-overlay">
+                <h3>Culinary Showcase</h3>
+                <p>Food Photography</p>
+              </div>
+            </div>
+
+            <div
+              class="portfolio-item"
+              data-category="photo"
+              data-modal="productModal"
+            >
+              <img src="img/gallery/1.jpg" alt="Product Photography" />
+              <div class="portfolio-category">Product</div>
+              <div class="portfolio-overlay">
+                <h3>Product Showcase</h3>
+                <p>Product Photography</p>
+              </div>
+            </div>
+
+            <div
+              class="portfolio-item"
+              data-category="photo"
+              data-modal="modelModal"
+            >
+              <img src="img/gallery/boxing.png" alt="Model Photography" />
+              <div class="portfolio-category">Model</div>
+              <div class="portfolio-overlay">
+                <h3>Portrait Collection</h3>
+                <p>Model Photography</p>
+              </div>
+            </div>
+
+            <div
+              class="portfolio-item"
+              data-category="photo"
+              data-modal="natureModal"
+            >
+              <img src="img/gallery/boxing.png" alt="Nature Photography" />
+              <div class="portfolio-category">Nature</div>
+              <div class="portfolio-overlay">
+                <h3>Outdoor Landscapes</h3>
+                <p>Nature Photography</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Simple Pagination -->
+        <div class="pagination-simple">
+          <div class="page-item active" data-page="1">1</div>
+          <div class="page-item" data-page="2">2</div>
+        </div>
+      </section>
+
+      <!-- Modal untuk menampilkan gambar penuh -->
+      <div id="imageModal" class="image-modal">
+        <span class="close" onclick="closeImageModal()">&times;</span>
+        <img class="image-modal-content" alt="" id="fullImage" />
+      </div>
+
+      <!-- Certification Section -->
+      <section class="portfolio-section">
+        <div class="section-heading">
+          <h2>My <span class="highlight">Certifications</span></h2>
+        </div>
+
+        <div class="certification-section">
+          <div class="certification-card">
+            <img
+              src="img/website/archipelago.png"
+              alt="Web Development Certificate"
+              class="certification-image"
+            />
+            <div class="certification-content">
+              <h3>Web Development</h3>
+              <p>Diterbitkan oleh Lembaga X</p>
+              <p>Tahun 2023</p>
+              <a
+                href="https://example.com/web-dev-cert"
+                class="credential-link"
+                target="_blank"
+                >View Credential</a
+              >
+            </div>
+          </div>
+
+          <div class="certification-card">
+            <img
+              src="https://via.placeholder.com/300x180?text=UI/UX+Design"
+              alt="UI/UX Design Certificate"
+              class="certification-image"
+            />
+            <div class="certification-content">
+              <h3>UI/UX Design</h3>
+              <p>Diterbitkan oleh Lembaga Y</p>
+              <p>Tahun 2022</p>
+              <a
+                href="https://example.com/uiux-cert"
+                class="credential-link"
+                target="_blank"
+                >View Credential</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Modals for Photography portfolios -->
+    <div id="foodModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Food Photography</h3>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div class="modal-gallery">
+            <img src="img/gallery/kimchi.png" alt="Kimchi" />
+            <img src="img/gallery/keripik.png" alt="Chips" />
+            <img src="img/gallery/spageti.png" alt="Spagheti" />
+            <img src="img/gallery/spageti.png" alt="Spagheti" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Product Photography</h3>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div class="modal-gallery">
+            <img src="img/gallery/1.jpg" alt="Serum" />
+            <img src="img/gallery/olate.png" alt="Olatte" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modelModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Model Photography</h3>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div class="modal-gallery">
+            <img src="img/gallery/boxing.png" alt="Boxing" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="natureModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Nature Photography</h3>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div class="modal-gallery">
+            <img src="img/gallery/boxing.png" alt="Nature" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Modal functionality
+      document
+        .querySelectorAll(".portfolio-item[data-modal]")
+        .forEach((item) => {
+          item.addEventListener("click", () => {
+            const modalId = item.getAttribute("data-modal");
+            if (modalId) {
+              document.getElementById(modalId).style.display = "block";
+            }
+          });
+        });
+
+      // Close buttons for modals
+      document.querySelectorAll(".close").forEach((closeBtn) => {
+        closeBtn.addEventListener("click", () => {
+          closeBtn.closest(".modal").style.display = "none";
+        });
+      });
+
+      // Close modals when clicking outside
+      window.addEventListener("click", (event) => {
+        const modals = document.querySelectorAll(".modal");
+        modals.forEach((modal) => {
+          if (event.target === modal) {
+            modal.style.display = "none";
+          }
+        });
+      });
+
+      // Fungsi untuk menutup modal
+      function closeImageModal() {
+        document.getElementById("imageModal").style.display = "none";
+      }
+
+      // Menutup modal saat user klik di luar gambar
+      window.addEventListener("click", function (event) {
+        const modal = document.getElementById("imageModal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      });
+
+      // Run this code immediately when the page loads
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the active tab's filter value
+        const activeTab = document.querySelector(".portfolio-tab.active");
+        if (activeTab) {
+          const activeFilter = activeTab.getAttribute("data-filter");
+
+          // Hide all content first
+          document.querySelectorAll(".portfolio-card").forEach((card) => {
+            card.style.display = "none";
+          });
+          document.getElementById("photography-container").style.display =
+            "none";
+
+          // Show only the active category content
+          if (activeFilter === "web") {
+            document
+              .querySelectorAll('.portfolio-card[data-category="web"]')
+              .forEach((card) => {
+                card.style.display = "";
+              });
+          } else if (activeFilter === "photo") {
+            document.getElementById("photography-container").style.display =
+              "block";
+          }
+          // Add more conditions for other categories like "uiux" if needed
+        }
+      });
+
+      // JavaScript untuk Portfolio Card Style dengan Pagination dan Filter
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // Filter tabs
+        const portfolioTabs = document.querySelectorAll(".portfolio-tab");
+        const portfolioCards = document.querySelectorAll(".portfolio-card");
+        const portfolioItems = document.querySelectorAll(".portfolio-item");
+        const photographyContainer = document.getElementById(
+          "photography-container",
+        );
+
+        // Pagination
+        const paginationItems = document.querySelectorAll(
+          ".pagination-simple .page-item",
+        );
+        const portfolioPages = document.querySelectorAll(".portfolio-page");
+
+        // Filter functionality
+        portfolioTabs.forEach((tab) => {
+          tab.addEventListener("click", function () {
+            // Remove active class from all tabs
+            portfolioTabs.forEach((t) => t.classList.remove("active"));
+
+            // Add active class to clicked tab
+            this.classList.add("active");
+
+            const filter = this.getAttribute("data-filter");
+
+            // Show items only matching the selected category
+            portfolioCards.forEach((card) => {
+              const category = card.getAttribute("data-category");
+
+              if (filter === category) {
+                card.style.display = ""; // Use default display
+              } else {
+                card.style.display = "none";
+              }
+            });
+
+            // Handle photography container separately
+            if (filter === "photo") {
+              photographyContainer.style.display = "block";
+            } else {
+              photographyContainer.style.display = "none";
+            }
+
+            // Reset pagination to page 1 when changing filters
+            paginationItems.forEach((item) => {
+              item.classList.remove("active");
+              if (item.getAttribute("data-page") === "1") {
+                item.classList.add("active");
+              }
+            });
+
+            portfolioPages.forEach((page) => {
+              page.classList.remove("active");
+              if (page.getAttribute("data-page") === "1") {
+                page.classList.add("active");
+              }
+            });
+          });
+        });
+
+        // Pagination functionality
+        paginationItems.forEach((item) => {
+          item.addEventListener("click", function () {
+            const pageNumber = this.getAttribute("data-page");
+
+            // Update active page button
+            paginationItems.forEach((p) => p.classList.remove("active"));
+            this.classList.add("active");
+
+            // Show selected page, hide others
+            portfolioPages.forEach((page) => {
+              page.classList.remove("active");
+              if (page.getAttribute("data-page") === pageNumber) {
+                page.classList.add("active");
+              }
+            });
+
+            // Scroll to top of portfolio section smoothly
+            document.querySelector(".portfolio-section").scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          });
+        });
+
+        // ── Card click → project detail page ─────────────────────────────
+        document
+          .querySelectorAll(".portfolio-card[data-project-id]")
+          .forEach(function (card) {
+            card.addEventListener("click", function (e) {
+              // Don't navigate when clicking a link or button inside the card
+              if (e.target.closest("a, button, .portfolio-magnify")) return;
+              const id = card.getAttribute("data-project-id");
+              window.location.href = "project-detail.html?id=" + id;
+            });
+          });
+
+        // Prevent magnify icon from triggering card navigation
+        document
+          .querySelectorAll(".portfolio-magnify")
+          .forEach(function (icon) {
+            icon.addEventListener("click", function (e) {
+              e.stopPropagation();
+            });
+          });
+
+        // Image modal functionality
+        function openImageModal(imgSrc) {
+          const modal = document.getElementById("imageModal");
+          const modalImg = document.getElementById("fullImage");
+
+          modal.style.display = "block";
+          modalImg.src = imgSrc;
+
+          // Prevent click event from propagating to parent elements
+          event.stopPropagation();
+        }
+
+        function closeImageModal() {
+          document.getElementById("imageModal").style.display = "none";
+        }
+
+        // Expose these functions to global scope so they can be used in inline onclick handlers
+        window.openImageModal = openImageModal;
+        window.closeImageModal = closeImageModal;
+
+        // Close modal when clicking outside the image
+        window.addEventListener("click", function (event) {
+          const modal = document.getElementById("imageModal");
+          if (event.target === modal) {
+            modal.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

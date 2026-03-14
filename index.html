@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -57,13 +57,16 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="test.html">CV</a>
+              <a class="nav-link" href="CV.html">CV</a>
             </li>
           </ul>
         </div>
@@ -165,7 +168,7 @@
             <div class="col-md-4">
               <div class="work-card">
                 <img
-                  src="img/gallery/ceo.png"
+                  src="img/exp/ceo.png"
                   alt="Branding"
                   class="img-fluid mb-3"
                 />
@@ -179,7 +182,7 @@
             <div class="col-md-4">
               <div class="work-card">
                 <img
-                  src="img/gallery/supervisor.png"
+                  src="img/exp/supervisor.png"
                   alt="Supervisor"
                   class="img-fluid mb-3"
                 />
@@ -193,7 +196,7 @@
             <div class="col-md-4">
               <div class="work-card">
                 <img
-                  src="img/gallery/videographer.png"
+                  src="img/exp/videographer.png"
                   alt="3D Visualization"
                   class="img-fluid mb-3"
                 />
@@ -243,61 +246,1738 @@
     <!--About End-->
 
     <!--Gallery Start-->
-    <!-- Gallery Opening Section -->
-    <section id="gallery" class="gallery-intro">
+    <!-- Gallery replaced by Experience timeline -->
+    <section id="experience" class="experience-section">
       <div class="container">
-        <div class="intro-content">
-          <div class="title-container">
-            <h1 class="gallery-title">Welcome to<br />Nugross Gallery</h1>
+        <!-- Section Header -->
+        <div class="experience-header">
+          <h2 class="experience-title">My Experience</h2>
+
+          <!-- Tab Navigation -->
+          <div class="experience-tabs">
+            <button class="experience-tab active" data-tab="professional">
+              Professional
+            </button>
+            <button class="experience-tab" data-tab="leadership">
+              Leadership & Community
+            </button>
+          </div>
+        </div>
+
+        <!-- Timeline 1: Professional -->
+        <div id="professional" class="experience-timeline active-timeline">
+          <!-- Timeline Item 1: IoTernak -->
+          <div class="timeline-item" data-exp-modal="exp-ioternak">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-thumb">
+                <img src="img/exp/ceo.png" alt="IoTernak" />
+                <div class="thumb-overlay">
+                  <i class="fas fa-expand-alt"></i>
+                </div>
+              </div>
+              <div class="timeline-text">
+                <div class="timeline-badge">2026 - Present</div>
+                <h3 class="timeline-title">CEO & Hustler</h3>
+                <p class="timeline-company">IoTernak</p>
+                <p class="timeline-desc">
+                  Directing business model innovation, leading digital marketing
+                  strategies, and managing key strategic partnerships for app
+                  development, 3D printing, and branding.
+                </p>
+                <span class="timeline-cta"
+                  >View Details <i class="fas fa-arrow-right"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: PT Zetta CEO -->
+          <div class="timeline-item" data-exp-modal="exp-zetta">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-thumb">
+                <img src="img/exp/ceo.png" alt="PT Zetta Kreatif Indonesia" />
+                <div class="thumb-overlay">
+                  <i class="fas fa-expand-alt"></i>
+                </div>
+              </div>
+              <div class="timeline-text">
+                <div class="timeline-badge">2023 - Present</div>
+                <h3 class="timeline-title">CEO</h3>
+                <p class="timeline-company">PT Zetta Kreatif Indonesia</p>
+                <p class="timeline-desc">
+                  Defining the company's long-term direction and driving
+                  strategic partnerships in the creative and media industry.
+                </p>
+                <span class="timeline-cta"
+                  >View Details <i class="fas fa-arrow-right"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: COO PT Archipelago -->
+          <div class="timeline-item" data-exp-modal="exp-archipelago">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-thumb">
+                <img src="img/exp/videographer.png" alt="PT Archipelago" />
+                <div class="thumb-overlay">
+                  <i class="fas fa-expand-alt"></i>
+                </div>
+              </div>
+              <div class="timeline-text">
+                <div class="timeline-badge">2024 - Present</div>
+                <h3 class="timeline-title">Chief Operating Officer</h3>
+                <p class="timeline-company">PT Archipelago Media Komunikasi</p>
+                <p class="timeline-desc">
+                  Overseeing operational strategy, process optimization, and
+                  team coordination to ensure efficient organizational
+                  functioning and business growth.
+                </p>
+                <span class="timeline-cta"
+                  >View Details <i class="fas fa-arrow-right"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4: Co-Founder Ricocapital -->
+          <div class="timeline-item" data-exp-modal="exp-ricocapital">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-thumb">
+                <img src="img/exp/videographer.png" alt="Ricocapital" />
+                <div class="thumb-overlay">
+                  <i class="fas fa-expand-alt"></i>
+                </div>
+              </div>
+              <div class="timeline-text">
+                <div class="timeline-badge">2024 - Present</div>
+                <h3 class="timeline-title">Co-Founder & Web Developer</h3>
+                <p class="timeline-company">Ricocapital</p>
+                <p class="timeline-desc">
+                  Co-founded a financial services platform and led the
+                  development of a full-stack web application with integrated
+                  payment gateway solutions.
+                </p>
+                <span class="timeline-cta"
+                  >View Details <i class="fas fa-arrow-right"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 5: COO Toko Pinjam -->
+          <div class="timeline-item" data-exp-modal="exp-tokopinjam">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-thumb">
+                <img src="img/exp/videographer.png" alt="Toko Pinjam" />
+                <div class="thumb-overlay">
+                  <i class="fas fa-expand-alt"></i>
+                </div>
+              </div>
+              <div class="timeline-text">
+                <div class="timeline-badge">2025 - Present</div>
+                <h3 class="timeline-title">Chief Operating Officer</h3>
+                <p class="timeline-company">Toko Pinjam</p>
+                <p class="timeline-desc">
+                  Managing operational excellence, logistics coordination, and
+                  vendor relationships for a peer-to-peer rental marketplace
+                  platform.
+                </p>
+                <span class="timeline-cta"
+                  >View Details <i class="fas fa-arrow-right"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 6: Social Media Manager Indonesian Press -->
+          <div class="timeline-item" data-exp-modal="exp-press">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-thumb">
+                <img
+                  src="img/exp/videographer.png"
+                  alt="The Indonesian Press"
+                />
+                <div class="thumb-overlay">
+                  <i class="fas fa-expand-alt"></i>
+                </div>
+              </div>
+              <div class="timeline-text">
+                <div class="timeline-badge">2024 - 2025</div>
+                <h3 class="timeline-title">Social Media Manager</h3>
+                <p class="timeline-company">The Indonesian Press</p>
+                <p class="timeline-desc">
+                  Developed and executed comprehensive social media strategies
+                  to increase brand awareness and audience engagement across
+                  multiple platforms.
+                </p>
+                <span class="timeline-cta"
+                  >View Details <i class="fas fa-arrow-right"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 7: Production Manager PT Zetta -->
+          <div class="timeline-item" data-exp-modal="exp-zetta-pm">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-thumb">
+                <img src="img/exp/videographer.png" alt="PT Zetta Production" />
+                <div class="thumb-overlay">
+                  <i class="fas fa-expand-alt"></i>
+                </div>
+              </div>
+              <div class="timeline-text">
+                <div class="timeline-badge">2022 - 2023</div>
+                <h3 class="timeline-title">Production Manager</h3>
+                <p class="timeline-company">PT Zetta Kreatif Indonesia</p>
+                <p class="timeline-desc">
+                  Managed video production workflows, coordinated creative
+                  teams, and ensured on-time delivery of multimedia assets for
+                  clients.
+                </p>
+                <span class="timeline-cta"
+                  >View Details <i class="fas fa-arrow-right"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 8: Videographer & Content Creator -->
+          <div class="timeline-item" data-exp-modal="exp-videographer">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-thumb">
+                <img src="img/exp/videographer.png" alt="Videographer" />
+                <div class="thumb-overlay">
+                  <i class="fas fa-expand-alt"></i>
+                </div>
+              </div>
+              <div class="timeline-text">
+                <div class="timeline-badge">2022 - Present</div>
+                <h3 class="timeline-title">Videographer & Content Creator</h3>
+                <p class="timeline-company">Freelance</p>
+                <p class="timeline-desc">
+                  Producing high-quality video content for competitions,
+                  organizations, and institutions, handling concept development,
+                  shooting, and post-production.
+                </p>
+                <span class="timeline-cta"
+                  >View Details <i class="fas fa-arrow-right"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 9: Social Media Intern PT Madhava -->
+          <div class="timeline-item" data-exp-modal="exp-madhava">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-thumb">
+                <img
+                  src="img/exp/videographer.png"
+                  alt="PT Madhava Kreasi Indonesia"
+                />
+                <div class="thumb-overlay">
+                  <i class="fas fa-expand-alt"></i>
+                </div>
+              </div>
+              <div class="timeline-text">
+                <div class="timeline-badge">2025</div>
+                <h3 class="timeline-title">Social Media Intern</h3>
+                <p class="timeline-company">PT Madhava Kreasi Indonesia</p>
+                <p class="timeline-desc">
+                  Assisted in managing social media campaigns, creating engaging
+                  content, and analyzing audience metrics to support marketing
+                  objectives.
+                </p>
+                <span class="timeline-cta"
+                  >View Details <i class="fas fa-arrow-right"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline 2: Leadership & Community -->
+        <div id="leadership" class="experience-timeline">
+          <!-- Timeline Item 1: Kuripan Kidul -->
+          <div class="timeline-item" data-exp-modal="exp-kuripan">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-thumb">
+                <img src="img/exp/supervisor.png" alt="Kuripan Kidul" />
+                <div class="thumb-overlay">
+                  <i class="fas fa-expand-alt"></i>
+                </div>
+              </div>
+              <div class="timeline-text">
+                <div class="timeline-badge">Feb 2026</div>
+                <h3 class="timeline-title">Village Project Coordinator</h3>
+                <p class="timeline-company">
+                  Kuripan Kidul Community Development
+                </p>
+                <p class="timeline-desc">
+                  Led a cross-functional team to integrate drip irrigation
+                  technology for chili cultivation alongside the 'Little
+                  Planter' educational program. Successfully facilitated UMKM
+                  halal certification with Halal Center Unsoed.
+                </p>
+                <span class="timeline-cta"
+                  >View Details <i class="fas fa-arrow-right"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Oryza -->
+          <div class="timeline-item" data-exp-modal="exp-oryza">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-thumb">
+                <img src="img/exp/supervisor.png" alt="Oryza Learning Camp" />
+                <div class="thumb-overlay">
+                  <i class="fas fa-expand-alt"></i>
+                </div>
+              </div>
+              <div class="timeline-text">
+                <div class="timeline-badge">2023</div>
+                <h3 class="timeline-title">Supervisor</h3>
+                <p class="timeline-company">Oryza Learning Camp Vol. 1</p>
+                <p class="timeline-desc">
+                  Coordinated team tasks, speaker preparations, and participant
+                  activities for the Oryza Learning Camp, ensuring smooth
+                  execution of the program from start to finish.
+                </p>
+                <span class="timeline-cta"
+                  >View Details <i class="fas fa-arrow-right"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: BEM Unsoed Intern 2023 -->
+          <div class="timeline-item" data-exp-modal="exp-bem-2023">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-thumb">
+                <img src="img/exp/supervisor.png" alt="BEM Unsoed 2023" />
+                <div class="thumb-overlay">
+                  <i class="fas fa-expand-alt"></i>
+                </div>
+              </div>
+              <div class="timeline-text">
+                <div class="timeline-badge">2023</div>
+                <h3 class="timeline-title">Intern</h3>
+                <p class="timeline-company">
+                  Student Executive Board (BEM) Unsoed, Ministry of Creative
+                  Economy
+                </p>
+                <p class="timeline-desc">
+                  Participated in Student Executive Board initiatives to promote
+                  creative economy awareness and support student
+                  entrepreneurship projects on campus.
+                </p>
+                <span class="timeline-cta"
+                  >View Details <i class="fas fa-arrow-right"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4: BEM Unsoed Staff 2024 -->
+          <div class="timeline-item" data-exp-modal="exp-bem-2024">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-thumb">
+                <img src="img/exp/supervisor.png" alt="BEM Unsoed 2024" />
+                <div class="thumb-overlay">
+                  <i class="fas fa-expand-alt"></i>
+                </div>
+              </div>
+              <div class="timeline-text">
+                <div class="timeline-badge">2024</div>
+                <h3 class="timeline-title">Staff</h3>
+                <p class="timeline-company">
+                  Student Executive Board (BEM) Unsoed, Ministry of Achievement
+                  & Science
+                </p>
+                <p class="timeline-desc">
+                  Served as staff member within the Ministry of Achievement and
+                  Science, supporting academic excellence initiatives and
+                  student development programs.
+                </p>
+                <span class="timeline-cta"
+                  >View Details <i class="fas fa-arrow-right"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 5: Read n Review Project Officer -->
+          <div class="timeline-item" data-exp-modal="exp-readnreview">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-thumb">
+                <img src="img/exp/supervisor.png" alt="Read n Review" />
+                <div class="thumb-overlay">
+                  <i class="fas fa-expand-alt"></i>
+                </div>
+              </div>
+              <div class="timeline-text">
+                <div class="timeline-badge">2024</div>
+                <h3 class="timeline-title">Project Officer</h3>
+                <p class="timeline-company">Read n Review Community</p>
+                <p class="timeline-desc">
+                  Led community initiatives focused on literacy, fostering
+                  connections among book enthusiasts through book sharing,
+                  community reading sessions, and networking events.
+                </p>
+                <span class="timeline-cta"
+                  >View Details <i class="fas fa-arrow-right"></i
+                ></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!--Gallery End-->
+    <!--Experience End-->
 
-    <!-- Full gallery Section Start-->
-    <section id="gmodal" class="gallery-modal">
-      <div class="section-intro">
-        <h3>Versatile Photographer</h3>
-        <p>
-          Capturing stories through diverse perspectives and creative mediums
+    <!-- Experience Modals -->
+
+    <!-- Modal: IoTernak -->
+    <div id="exp-ioternak" class="exp-modal">
+      <div class="exp-modal-overlay"></div>
+      <div class="exp-modal-content">
+        <button class="exp-modal-close">&times;</button>
+        <div class="exp-modal-header">
+          <div class="exp-modal-badge">2026 - Present</div>
+          <h3 class="exp-modal-title">CEO & Hustler</h3>
+          <p class="exp-modal-company">IoTernak</p>
+        </div>
+        <div class="exp-modal-body">
+          <div class="exp-modal-gallery">
+            <img src="img/exp/ceo.png" alt="IoTernak Activity" />
+          </div>
+          <div class="exp-modal-details">
+            <h4>About the Role</h4>
+            <p>
+              Directing business model innovation, leading digital marketing
+              strategies, and managing key strategic partnerships for app
+              development, 3D printing, and branding.
+            </p>
+            <h4>Key Responsibilities</h4>
+            <ul>
+              <li>
+                Leading the overall business direction and product strategy
+              </li>
+              <li>
+                Managing partnerships across tech, manufacturing, and branding
+                sectors
+              </li>
+              <li>Driving digital marketing and growth campaigns</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: PT Zetta Kreatif Indonesia -->
+    <div id="exp-zetta" class="exp-modal">
+      <div class="exp-modal-overlay"></div>
+      <div class="exp-modal-content">
+        <button class="exp-modal-close">&times;</button>
+        <div class="exp-modal-header">
+          <div class="exp-modal-badge">2023 - Present</div>
+          <h3 class="exp-modal-title">CEO</h3>
+          <p class="exp-modal-company">PT Zetta Kreatif Indonesia</p>
+        </div>
+        <div class="exp-modal-body">
+          <div class="exp-modal-gallery">
+            <img src="img/exp/ceo.png" alt="PT Zetta Activity" />
+          </div>
+          <div class="exp-modal-details">
+            <h4>Key Achievements</h4>
+            <ul>
+              <li>
+                Launched zettacreativee.com company profile website using
+                WordPress with comprehensive navigation including home, about,
+                portfolio, and contact sections
+              </li>
+              <li>
+                Served as media partner for "Suka Boxing" event in Serang City
+                (July 2023), providing fighter photography, event promotion, and
+                post-event video production
+              </li>
+              <li>
+                Created and launched cafe recommendation social media program
+                reaching 14K views on Instagram and 9K views on TikTok
+              </li>
+              <li>
+                Established internship program for university and high school
+                students, attracting 15 applicants for 5 available positions
+              </li>
+              <li>
+                Supported 10+ SMEs in enhancing product photography quality as a
+                core digital marketing asset, improving online branding and
+                sales performance
+              </li>
+              <li>
+                Oversaw end-to-end creative business operations from concept
+                development through content production and digital distribution
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Kuripan Kidul -->
+    <div id="exp-kuripan" class="exp-modal">
+      <div class="exp-modal-overlay"></div>
+      <div class="exp-modal-content">
+        <button class="exp-modal-close">&times;</button>
+        <div class="exp-modal-header">
+          <div class="exp-modal-badge">Feb 2026</div>
+          <h3 class="exp-modal-title">Village Project Coordinator</h3>
+          <p class="exp-modal-company">Kuripan Kidul Community Development</p>
+        </div>
+        <div class="exp-modal-body">
+          <div class="exp-modal-gallery">
+            <img src="img/exp/supervisor.png" alt="Kuripan Kidul Project" />
+          </div>
+          <div class="exp-modal-details">
+            <h4>Key Achievements</h4>
+            <ul>
+              <li>
+                Successfully implemented 25 community development programs
+                across five sectors: economy, education, health, environment,
+                and village governance
+              </li>
+              <li>
+                Initiated and led the "Little Planter" circular economy program
+                engaging 56 elementary school students in environmental and
+                planting activities
+              </li>
+              <li>
+                Facilitated formation of local MSME community (Paguyuban UMKM)
+                in Kuripan Kidul Village
+              </li>
+              <li>
+                Assisted 10+ MSMEs in obtaining legal business identification
+                (NIB), Halal Certification, and QRIS payment systems
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Oryza Learning Camp -->
+    <div id="exp-oryza" class="exp-modal">
+      <div class="exp-modal-overlay"></div>
+      <div class="exp-modal-content">
+        <button class="exp-modal-close">&times;</button>
+        <div class="exp-modal-header">
+          <div class="exp-modal-badge">2023</div>
+          <h3 class="exp-modal-title">Supervisor</h3>
+          <p class="exp-modal-company">Oryza Learning Camp Vol. 1</p>
+        </div>
+        <div class="exp-modal-body">
+          <div class="exp-modal-gallery">
+            <img src="img/exp/supervisor.png" alt="Oryza Learning Camp" />
+          </div>
+          <div class="exp-modal-details">
+            <h4>Key Responsibilities</h4>
+            <ul>
+              <li>
+                Coordinated team tasks and responsibilities during the event
+                ensuring seamless execution
+              </li>
+              <li>
+                Communicated with all speakers to confirm readiness and resolve
+                any logistical issues
+              </li>
+              <li>
+                Coordinated participant activities and maintained engagement
+                throughout the Oryza Learning Camp Vol. 1
+              </li>
+              <li>
+                Ensured the event ran smoothly and adhered to the pre-arranged
+                timeline
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: COO PT Archipelago Media Komunikasi -->
+    <div id="exp-archipelago" class="exp-modal">
+      <div class="exp-modal-overlay"></div>
+      <div class="exp-modal-content">
+        <button class="exp-modal-close">&times;</button>
+        <div class="exp-modal-header">
+          <div class="exp-modal-badge">2024 - Present</div>
+          <h3 class="exp-modal-title">Chief Operating Officer</h3>
+          <p class="exp-modal-company">PT Archipelago Media Komunikasi</p>
+        </div>
+        <div class="exp-modal-body">
+          <div class="exp-modal-gallery">
+            <img src="img/exp/videographer.png" alt="Archipelago" />
+          </div>
+          <div class="exp-modal-details">
+            <h4>Key Responsibilities</h4>
+            <ul>
+              <li>
+                Guide the operations of both media outlets and provide strategic
+                advice to media heads for improvement based on Performance Index
+                analytics
+              </li>
+              <li>
+                Ensure smooth day-to-day company operations including content
+                production, distribution, and audience interaction across all
+                media divisions
+              </li>
+              <li>
+                Build and direct competent teams across editorial, production,
+                and audience behavior research divisions
+              </li>
+              <li>
+                Ensure media product quality meets established standards and
+                audience expectations
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Co-Founder Ricocapital -->
+    <div id="exp-ricocapital" class="exp-modal">
+      <div class="exp-modal-overlay"></div>
+      <div class="exp-modal-content">
+        <button class="exp-modal-close">&times;</button>
+        <div class="exp-modal-header">
+          <div class="exp-modal-badge">2024 - Present</div>
+          <h3 class="exp-modal-title">Co-Founder & Web Developer</h3>
+          <p class="exp-modal-company">Ricocapital</p>
+        </div>
+        <div class="exp-modal-body">
+          <div class="exp-modal-gallery">
+            <img src="img/exp/videographer.png" alt="Ricocapital" />
+          </div>
+          <div class="exp-modal-details">
+            <h4>Key Achievements</h4>
+            <ul>
+              <li>
+                Designed and developed intuitive, user-friendly interfaces
+                ensuring responsive design across all devices
+              </li>
+              <li>
+                Created company landing page and online classes platform at
+                ricocapital.co.id using WordPress
+              </li>
+              <li>
+                Implemented website indexing using Google Search Console,
+                achieving 58% indexing penetration from North American users
+              </li>
+              <li>
+                Architected scalable back-end infrastructure for financial
+                services operations
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: COO Toko Pinjam -->
+    <div id="exp-tokopinjam" class="exp-modal">
+      <div class="exp-modal-overlay"></div>
+      <div class="exp-modal-content">
+        <button class="exp-modal-close">&times;</button>
+        <div class="exp-modal-header">
+          <div class="exp-modal-badge">2025 - Present</div>
+          <h3 class="exp-modal-title">Chief Operating Officer</h3>
+          <p class="exp-modal-company">Toko Pinjam</p>
+        </div>
+        <div class="exp-modal-body">
+          <div class="exp-modal-gallery">
+            <img src="img/exp/videographer.png" alt="Toko Pinjam" />
+          </div>
+          <div class="exp-modal-details">
+            <h4>Key Achievements</h4>
+            <ul>
+              <li>
+                Acquired 70 active platform members who registered and actively
+                used Toko Pinjam services
+              </li>
+              <li>
+                Established collaborations with 6 university and faculty-level
+                events at Universitas Jenderal Soedirman
+              </li>
+              <li>
+                Supported 150+ students and student organizations in organizing
+                campus events through Toko Pinjam rental services
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Social Media Manager The Indonesian Press -->
+    <div id="exp-press" class="exp-modal">
+      <div class="exp-modal-overlay"></div>
+      <div class="exp-modal-content">
+        <button class="exp-modal-close">&times;</button>
+        <div class="exp-modal-header">
+          <div class="exp-modal-badge">2024 - 2025</div>
+          <h3 class="exp-modal-title">Social Media Manager</h3>
+          <p class="exp-modal-company">The Indonesian Press</p>
+        </div>
+        <div class="exp-modal-body">
+          <div class="exp-modal-gallery">
+            <img src="img/exp/videographer.png" alt="The Indonesian Press" />
+          </div>
+          <div class="exp-modal-details">
+            <h4>Key Achievements</h4>
+            <ul>
+              <li>
+                Created 90 pieces of content that increased brand awareness by
+                70.5% with maximum single-post reach of 356K views
+              </li>
+              <li>
+                Monitored and analyzed key performance indicators (KPIs) to
+                shape content strategy and identify effective editorial
+                approaches
+              </li>
+              <li>
+                Generated weekly engagement metrics: 403K post views, 2,042
+                profile views, 7,938 total likes, and 417 shares
+              </li>
+              <li>
+                Achieved monthly engagement growth: 1M post views, 3,947 profile
+                views, 26K total likes, and 1,712 shares
+              </li>
+              <li>
+                Successfully reached 1 million post views per month (September
+                2024)
+              </li>
+              <li>Consistently achieved 400K+ post views per week</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Production Manager PT Zetta -->
+    <div id="exp-zetta-pm" class="exp-modal">
+      <div class="exp-modal-overlay"></div>
+      <div class="exp-modal-content">
+        <button class="exp-modal-close">&times;</button>
+        <div class="exp-modal-header">
+          <div class="exp-modal-badge">2022 - 2023</div>
+          <h3 class="exp-modal-title">Production Manager</h3>
+          <p class="exp-modal-company">PT Zetta Kreatif Indonesia</p>
+        </div>
+        <div class="exp-modal-body">
+          <div class="exp-modal-gallery">
+            <img src="img/exp/videographer.png" alt="Zetta Production" />
+          </div>
+          <div class="exp-modal-details">
+            <h4>Key Achievements</h4>
+            <ul>
+              <li>
+                Managed video, photo, and 2D animation production workflows
+                ensuring smooth daily operations
+              </li>
+              <li>
+                Led a team of 5 members in producing 28 public service
+                announcement animations and profile videos within 2 months
+              </li>
+              <li>
+                Created 28 comprehensive storylines and storyboards for
+                animation video requirements over 2 months
+              </li>
+              <li>
+                Successfully produced 10+ product and food photography
+                deliverables for small and medium enterprises
+              </li>
+              <li>
+                Planned and conceptualized product photo shoots with contingency
+                mitigation for production challenges
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Videographer & Content Creator -->
+    <div id="exp-videographer" class="exp-modal">
+      <div class="exp-modal-overlay"></div>
+      <div class="exp-modal-content">
+        <button class="exp-modal-close">&times;</button>
+        <div class="exp-modal-header">
+          <div class="exp-modal-badge">2022 - Present</div>
+          <h3 class="exp-modal-title">Videographer & Content Creator</h3>
+          <p class="exp-modal-company">Freelance</p>
+        </div>
+        <div class="exp-modal-body">
+          <div class="exp-modal-gallery">
+            <img src="img/exp/videographer.png" alt="Videography" />
+          </div>
+          <div class="exp-modal-details">
+            <h4>Key Achievements</h4>
+            <ul>
+              <li>
+                Provided photography services for brand products, SMEs, and
+                professional models
+              </li>
+              <li>
+                Produced videos for competitions and collaborated with
+                organizations and institutions on video production
+              </li>
+              <li>
+                Implemented free photography strategy for 10 selected small
+                businesses, publishing outputs on social media and successfully
+                acquiring 10+ additional photography clients
+              </li>
+              <li>
+                Served as videographer for "Are you okay?" short film in
+                Scootests competition
+              </li>
+              <li>
+                Served as videographer for "A Brief Run" in the DISPARPORA
+                competition
+              </li>
+              <li>
+                Created engaging Instagram Reels content, achieving 158K+ views
+                on single posts
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Social Media Intern PT Madhava Kreasi Indonesia -->
+    <div id="exp-madhava" class="exp-modal">
+      <div class="exp-modal-overlay"></div>
+      <div class="exp-modal-content">
+        <button class="exp-modal-close">&times;</button>
+        <div class="exp-modal-header">
+          <div class="exp-modal-badge">2025</div>
+          <h3 class="exp-modal-title">Social Media Intern</h3>
+          <p class="exp-modal-company">PT Madhava Kreasi Indonesia</p>
+        </div>
+        <div class="exp-modal-body">
+          <div class="exp-modal-gallery">
+            <img src="img/exp/videographer.png" alt="Madhava" />
+          </div>
+          <div class="exp-modal-details">
+            <h4>Key Achievements</h4>
+            <ul>
+              <li>
+                Developed 9 comprehensive social media content plans across
+                multiple brands
+              </li>
+              <li>
+                Produced 66 feed posts, 85 Instagram Stories, and 15 TikTok
+                contents for various brands
+              </li>
+              <li>
+                Created 10 monthly social media performance reports including
+                analytics for Kedai Tepi Kali, Bahana Guest House, Vision Villa,
+                and Genius Cafe
+              </li>
+              <li>
+                Conducted competitor analysis identifying content strategies,
+                target audience insights, and optimal posting strategies for
+                brand positioning
+              </li>
+              <li>
+                Generated 19,125 impressions and 4,061 reach for Kedai Tepi Kali
+                with 3.13% engagement rate in monthly campaigns
+              </li>
+              <li>
+                Developed and updated influencer and media databases adding 69+
+                datasets of food vloggers and travel influencers for
+                collaboration opportunities
+              </li>
+              <li>
+                Assisted in executing influencer collaboration campaigns to
+                increase brand exposure and audience engagement
+              </li>
+              <li>
+                Produced on-site content including promotional materials,
+                cooking class coverage, and ambience content for brand
+                storytelling
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: BEM Unsoed Intern 2023 -->
+    <div id="exp-bem-2023" class="exp-modal">
+      <div class="exp-modal-overlay"></div>
+      <div class="exp-modal-content">
+        <button class="exp-modal-close">&times;</button>
+        <div class="exp-modal-header">
+          <div class="exp-modal-badge">2023</div>
+          <h3 class="exp-modal-title">Intern</h3>
+          <p class="exp-modal-company">
+            Student Executive Board (BEM) Unsoed, Ministry of Creative Economy
+          </p>
+        </div>
+        <div class="exp-modal-body">
+          <div class="exp-modal-gallery">
+            <img src="img/exp/supervisor.png" alt="BEM Unsoed" />
+          </div>
+          <div class="exp-modal-details">
+            <h4>Key Achievements</h4>
+            <ul>
+              <li>
+                Served as media publication division staff with 1 feed post, 2
+                Reels, and 10 interactive Stories published
+              </li>
+              <li>Created pamphlet designs and ID cards for BEM initiatives</li>
+              <li>
+                Documented and produced content from Entrepreneur Talk 2023
+                event
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: BEM Unsoed Staff 2024 -->
+    <div id="exp-bem-2024" class="exp-modal">
+      <div class="exp-modal-overlay"></div>
+      <div class="exp-modal-content">
+        <button class="exp-modal-close">&times;</button>
+        <div class="exp-modal-header">
+          <div class="exp-modal-badge">2024</div>
+          <h3 class="exp-modal-title">Staff</h3>
+          <p class="exp-modal-company">
+            Student Executive Board (BEM) Unsoed, Ministry of Achievement &
+            Science
+          </p>
+        </div>
+        <div class="exp-modal-body">
+          <div class="exp-modal-gallery">
+            <img src="img/exp/supervisor.png" alt="BEM Unsoed 2024" />
+          </div>
+          <div class="exp-modal-details">
+            <h4>Key Achievements</h4>
+            <ul>
+              <li>
+                Successfully conducted the Read and Review literacy program 6
+                times, serving UNSOED students and Purwokerto community
+              </li>
+              <li>
+                Collaborated with Baca-Baci and Baca Bareng Purwokerto
+                communities, engaging 80+ participants
+              </li>
+              <li>
+                Served as moderator for the Soedirman Debate Competition
+                featuring 12 participating teams
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Read n Review Project Officer -->
+    <div id="exp-readnreview" class="exp-modal">
+      <div class="exp-modal-overlay"></div>
+      <div class="exp-modal-content">
+        <button class="exp-modal-close">&times;</button>
+        <div class="exp-modal-header">
+          <div class="exp-modal-badge">2024</div>
+          <h3 class="exp-modal-title">Project Officer</h3>
+          <p class="exp-modal-company">Read n Review Community</p>
+        </div>
+        <div class="exp-modal-body">
+          <div class="exp-modal-gallery">
+            <img src="img/exp/supervisor.png" alt="Read n Review" />
+          </div>
+          <div class="exp-modal-details">
+            <h4>Key Achievements</h4>
+            <ul>
+              <li>
+                Successfully organized the literacy program 6 times with an
+                average of 63 participants per session
+              </li>
+              <li>
+                Initiated and led "Book Voyage" collaborative literacy program
+                in partnership with Baca-Baci and Baca Bareng Purwokerto
+                communities
+              </li>
+              <li>
+                Successfully engaged 80 participants in the collaborative Book
+                Voyage initiative
+              </li>
+              <li>
+                Built a strong community of book enthusiasts through organized
+                reading events and networking activities
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Experience Modals -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+      <div class="section-heading">
+        <h2>Check out my <span class="highlight">latest work</span></h2>
+        <p class="tagline">
+          I've worked on various projects, ranging from simple websites to
+          complex websites. Additionally, I also work on UI/UX Design for
+          Websites and Mobile Apps. In my spare time, I do photoshoots for
+          product brands, models, food, and nature. Here are some of my favorite
+          projects.
         </p>
       </div>
 
-      <div id="tentang">
-        <div class="tentang-left">
-          In a world filled with countless beautiful moments and things, it
-          would be a shame not to capture them. Starting as a street
-          photographer who was deeply passionate about human interest
-          photography and everything related to street activities.
+      <!-- Portfolio Tabs -->
+      <div class="portfolio-tabs">
+        <button class="portfolio-tab active" data-filter="web">Websites</button>
+        <button class="portfolio-tab" data-filter="uiux">UI/UX</button>
+        <button class="portfolio-tab" data-filter="photo">Photography</button>
+      </div>
+
+      <!-- Portfolio Page 1 — Clients (1–5) + First University -->
+      <div class="portfolio-page active" data-page="1">
+        <!-- Card 1 · PT Archipelago · Client -->
+        <div
+          class="portfolio-card"
+          data-category="web"
+          data-project-id="archipelago"
+        >
+          <div class="portfolio-card-image">
+            <div
+              class="portfolio-magnify"
+              onclick="openImageModal('img/website/archipelago.png')"
+            >
+              <i class="fas fa-search-plus"></i>
+            </div>
+            <img
+              src="img/website/archipelago.png"
+              alt="PT Archipelago Media Komunikasi"
+            />
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="portfolio-card-title">
+              PT Archipelago Media Komunikasi
+              <span class="portfolio-card-category">Website</span>
+            </h3>
+            <div class="portfolio-card-date">Jan 2025 - Feb 2025</div>
+            <span class="portfolio-card-keterangan keterangan-client"
+              >Client Project</span
+            >
+            <p class="portfolio-card-description">
+              Company profile website for a media company in South Tangerang,
+              serving as the company's professional digital face.
+            </p>
+            <div class="portfolio-card-tech">
+              <span class="tech-badge tech-html"
+                ><i class="fab fa-html5"></i> HTML</span
+              >
+              <span class="tech-badge tech-css"
+                ><i class="fab fa-css3"></i> CSS</span
+              >
+              <span class="tech-badge tech-js"
+                ><i class="fab fa-js"></i> JavaScript</span
+              >
+            </div>
+            <div class="portfolio-card-links">
+              <a
+                href="https://nugrahhadi.github.io/Archipelagocs/"
+                class="card-btn card-btn-primary"
+                target="_blank"
+              >
+                <i class="fas fa-globe"></i> Live Demo
+              </a>
+              <a
+                href="https://github.com/Nugrahhadi/Archipelagocs.git"
+                class="card-btn card-btn-primary"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i> Source
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="tentang-right">
-          Through my lens I can capture stories—personal, relatable, and real.
-          Through all of this I expanded my lens coverage to include food,
-          products, and models. All of this provides new and impressive
-          experiences.
+
+        <!-- Card 2 · Ricocapital · Client -->
+        <div
+          class="portfolio-card"
+          data-category="web"
+          data-project-id="ricocapital"
+        >
+          <div class="portfolio-card-image">
+            <div
+              class="portfolio-magnify"
+              onclick="openImageModal('img/website/Ricocapital.webp')"
+            >
+              <i class="fas fa-search-plus"></i>
+            </div>
+            <img src="img/website/Ricocapital.webp" alt="Ricocapital" />
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="portfolio-card-title">
+              Ricocapital
+              <span class="portfolio-card-category">Website</span>
+            </h3>
+            <div class="portfolio-card-date">Jun 2024 - Aug 2024</div>
+            <span class="portfolio-card-keterangan keterangan-client"
+              >Client Project</span
+            >
+            <p class="portfolio-card-description">
+              Full-stack financial services website with Laravel Inertia SPA
+              architecture and Midtrans payment gateway integration.
+            </p>
+            <div class="portfolio-card-tech">
+              <span class="tech-badge tech-laravel"
+                ><i class="fab fa-laravel"></i> Laravel</span
+              >
+              <span class="tech-badge tech-inertia"
+                ><i class="fas fa-layer-group"></i> Inertia</span
+              >
+              <span class="tech-badge tech-tailwind">
+                <iconify-icon
+                  icon="simple-icons:tailwindcss"
+                  width="16.5"
+                  height="16.5"
+                  style="vertical-align: middle; margin-right: 1px"
+                ></iconify-icon>
+                TailwindCSS
+              </span>
+              <span class="tech-badge tech-typescript">
+                <iconify-icon
+                  icon="simple-icons:typescript"
+                  width="16.5"
+                  height="16.5"
+                  style="vertical-align: middle; margin-right: 1px"
+                ></iconify-icon>
+                TypeScript
+              </span>
+              <span class="tech-badge tech-mysql"
+                ><i class="fas fa-database"></i> MySQL</span
+              >
+              <span class="tech-badge tech-midtrans"
+                ><i class="fas fa-credit-card"></i> Midtrans</span
+              >
+            </div>
+            <div class="portfolio-card-links">
+              <a
+                href="https://ricocapital.id/"
+                class="card-btn card-btn-primary"
+                target="_blank"
+              >
+                <i class="fas fa-globe"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 · PT Zetta · Client -->
+        <div class="portfolio-card" data-category="web" data-project-id="zetta">
+          <div class="portfolio-card-image">
+            <div
+              class="portfolio-magnify"
+              onclick="openImageModal('img/website/zetta.png')"
+            >
+              <i class="fas fa-search-plus"></i>
+            </div>
+            <img src="img/website/zetta.png" alt="PT Zetta Kreatif Indonesia" />
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="portfolio-card-title">
+              PT Zetta Kreatif Indonesia
+              <span class="portfolio-card-category">Website</span>
+            </h3>
+            <div class="portfolio-card-date">Jun 2023 - Jul 2023</div>
+            <span class="portfolio-card-keterangan keterangan-client"
+              >Client Project</span
+            >
+            <p class="portfolio-card-description">
+              Company profile website for a creative agency, showcasing their
+              portfolio, services, and team on WordPress.
+            </p>
+            <div class="portfolio-card-tech">
+              <span class="tech-badge tech-wordpress"
+                ><i class="fab fa-wordpress"></i> WordPress</span
+              >
+            </div>
+            <div class="portfolio-card-links">
+              <a href="#" class="card-btn card-btn-primary" target="_blank">
+                <i class="fas fa-globe"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 · Toko Pinjam · Client -->
+        <div
+          class="portfolio-card"
+          data-category="web"
+          data-project-id="tokopinjam"
+        >
+          <div class="portfolio-card-image">
+            <div
+              class="portfolio-magnify"
+              onclick="openImageModal('img/website/toko-pinjam.webp')"
+            >
+              <i class="fas fa-search-plus"></i>
+            </div>
+            <img src="img/website/toko-pinjam.webp" alt="Toko Pinjam" />
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="portfolio-card-title">
+              Toko Pinjam
+              <span class="portfolio-card-category">Website</span>
+            </h3>
+            <div class="portfolio-card-date">Jul 2025 - Aug 2025</div>
+            <span class="portfolio-card-keterangan keterangan-client"
+              >Client Project</span
+            >
+            <p class="portfolio-card-description">
+              A rental platform that connects borrowers and lenders for everyday
+              items, built with a modern Laravel stack.
+            </p>
+            <div class="portfolio-card-tech">
+              <span class="tech-badge tech-laravel"
+                ><i class="fab fa-laravel"></i> Laravel</span
+              >
+              <span class="tech-badge tech-inertia"
+                ><i class="fas fa-layer-group"></i> Inertia</span
+              >
+              <span class="tech-badge tech-tailwind">
+                <iconify-icon
+                  icon="simple-icons:tailwindcss"
+                  width="16.5"
+                  height="16.5"
+                  style="vertical-align: middle; margin-right: 1px"
+                ></iconify-icon>
+                TailwindCSS
+              </span>
+            </div>
+            <div class="portfolio-card-links">
+              <a
+                href="https://tokopinjam.com/"
+                class="card-btn card-btn-primary"
+                target="_blank"
+              >
+                <i class="fas fa-globe"></i> Live Demo
+              </a>
+              <a
+                href="https://github.com/Nugrahhadi/Toko-Pinjam-V1.git"
+                class="card-btn card-btn-primary"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i> Source
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 · Kalanoia Coffee · Client -->
+        <div
+          class="portfolio-card"
+          data-category="web"
+          data-project-id="kalanoia"
+        >
+          <div class="portfolio-card-image">
+            <div
+              class="portfolio-magnify"
+              onclick="openImageModal('img/website/kalanoia.png')"
+            >
+              <i class="fas fa-search-plus"></i>
+            </div>
+            <img src="img/website/kalanoia.png" alt="Kalanoia Coffee" />
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="portfolio-card-title">
+              Kalanoia Coffee
+              <span class="portfolio-card-category">Website</span>
+            </h3>
+            <div class="portfolio-card-date">2025</div>
+            <span class="portfolio-card-keterangan keterangan-client"
+              >Client Project</span
+            >
+            <p class="portfolio-card-description">
+              A landing page and online catalog website for a local coffee
+              brand, showcasing their menu and story.
+            </p>
+            <div class="portfolio-card-tech">
+              <span class="tech-badge tech-html"
+                ><i class="fab fa-html5"></i> HTML</span
+              >
+              <span class="tech-badge tech-css"
+                ><i class="fab fa-css3"></i> CSS</span
+              >
+              <span class="tech-badge tech-js"
+                ><i class="fab fa-js"></i> JavaScript</span
+              >
+            </div>
+            <div class="portfolio-card-links">
+              <a href="#" class="card-btn card-btn-primary" target="_blank">
+                <i class="fas fa-globe"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 · YAHAYU · University -->
+        <div
+          class="portfolio-card"
+          data-category="web"
+          data-project-id="yahayu"
+        >
+          <div class="portfolio-card-image">
+            <div
+              class="portfolio-magnify"
+              onclick="openImageModal('img/website/yahayu.png')"
+            >
+              <i class="fas fa-search-plus"></i>
+            </div>
+            <img src="img/website/yahayu.png" alt="YAHAYU" />
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="portfolio-card-title">
+              YAHAYU - Brazilian Tourist Destinations
+              <span class="portfolio-card-category">Website</span>
+            </h3>
+            <div class="portfolio-card-date">Nov 2024 - Dec 2024</div>
+            <span class="portfolio-card-keterangan keterangan-university"
+              >University Project</span
+            >
+            <p class="portfolio-card-description">
+              Yahayu makes it easy to book tickets for popular tourist
+              attractions and hidden gems in Brazil, with booking and payment
+              features.
+            </p>
+            <div class="portfolio-card-tech">
+              <span class="tech-badge tech-html"
+                ><i class="fab fa-html5"></i> HTML</span
+              >
+              <span class="tech-badge tech-css"
+                ><i class="fab fa-css3"></i> CSS</span
+              >
+              <span class="tech-badge tech-js"
+                ><i class="fab fa-js"></i> JavaScript</span
+              >
+              <span class="tech-badge tech-php"
+                ><i class="fab fa-php"></i> PHP</span
+              >
+              <span class="tech-badge tech-mysql"
+                ><i class="fas fa-database"></i> MySQL</span
+              >
+            </div>
+            <div class="portfolio-card-links">
+              <a
+                href="https://github.com/Nugrahhadi/YAHAYU.git"
+                class="card-btn card-btn-primary"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i> Source
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /page 1 -->
+
+      <!-- Portfolio Page 2 — University (cont.) + Personal -->
+      <div class="portfolio-page" data-page="2">
+        <!-- Card 7 · Smart Parking · University -->
+        <div
+          class="portfolio-card"
+          data-category="web"
+          data-project-id="smartparking"
+        >
+          <div class="portfolio-card-image">
+            <div
+              class="portfolio-magnify"
+              onclick="openImageModal('img/website/SmartParking.png')"
+            >
+              <i class="fas fa-search-plus"></i>
+            </div>
+            <img
+              src="img/website/SmartParking.png"
+              alt="Smart Parking System"
+            />
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="portfolio-card-title">
+              Smart Parking System
+              <span class="portfolio-card-category">Website</span>
+            </h3>
+            <div class="portfolio-card-date">April 2025</div>
+            <span class="portfolio-card-keterangan keterangan-university"
+              >University Project</span
+            >
+            <p class="portfolio-card-description">
+              Real-time smart parking management system with React, including a
+              Python-powered license plate camera tracking module.
+            </p>
+            <div class="portfolio-card-tech">
+              <span class="tech-badge tech-react"
+                ><i class="fab fa-react"></i> React</span
+              >
+              <span class="tech-badge tech-tailwind">
+                <iconify-icon
+                  icon="simple-icons:tailwindcss"
+                  width="16.5"
+                  height="16.5"
+                  style="vertical-align: middle; margin-right: 1px"
+                ></iconify-icon>
+                TailwindCSS
+              </span>
+              <span class="tech-badge tech-js"
+                ><i class="fab fa-js"></i> JavaScript</span
+              >
+              <span class="tech-badge tech-mysql"
+                ><i class="fas fa-database"></i> MySQL</span
+              >
+              <span class="tech-badge tech-python"
+                ><i class="fab fa-python"></i> Python</span
+              >
+            </div>
+            <div class="portfolio-card-links">
+              <a
+                href="https://github.com/Nugrahhadi/smart-parking.git"
+                class="card-btn card-btn-primary"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i> Source
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 · Matrix & SPL Solver · University -->
+        <div class="portfolio-card" data-category="web" data-project-id="spl">
+          <div class="portfolio-card-image">
+            <div
+              class="portfolio-magnify"
+              onclick="openImageModal('img/website/spl.png')"
+            >
+              <i class="fas fa-search-plus"></i>
+            </div>
+            <img src="img/website/spl.png" alt="Matrix & SPL Solver" />
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="portfolio-card-title">
+              Matrix & SPL Solver
+              <span class="portfolio-card-category">Website</span>
+            </h3>
+            <div class="portfolio-card-date">Okt 2024 - Nov 2024</div>
+            <span class="portfolio-card-keterangan keterangan-university"
+              >University Project</span
+            >
+            <p class="portfolio-card-description">
+              Browser-based math tool that solves systems of linear equations
+              and performs matrix operations with step-by-step display.
+            </p>
+            <div class="portfolio-card-tech">
+              <span class="tech-badge tech-html"
+                ><i class="fab fa-html5"></i> HTML</span
+              >
+              <span class="tech-badge tech-css"
+                ><i class="fab fa-css3"></i> CSS</span
+              >
+              <span class="tech-badge tech-js"
+                ><i class="fab fa-js"></i> JavaScript</span
+              >
+            </div>
+            <div class="portfolio-card-links">
+              <a
+                href="https://nugrahhadi.github.io/Proyek-Aljabar-Linear/"
+                class="card-btn card-btn-primary"
+                target="_blank"
+              >
+                <i class="fas fa-globe"></i> Live Demo
+              </a>
+              <a
+                href="https://github.com/Nugrahhadi/Proyek-Aljabar-Linear.git"
+                class="card-btn card-btn-primary"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i> Source
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 9 · Coca-Cola Commerce · Personal -->
+        <div
+          class="portfolio-card"
+          data-category="web"
+          data-project-id="cocacola"
+        >
+          <div class="portfolio-card-image">
+            <div
+              class="portfolio-magnify"
+              onclick="openImageModal('img/website/coca-cola.png')"
+            >
+              <i class="fas fa-search-plus"></i>
+            </div>
+            <img src="img/website/coca-cola.png" alt="Coca-Cola Commerce" />
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="portfolio-card-title">
+              Coca-Cola Commerce
+              <span class="portfolio-card-category">Website</span>
+            </h3>
+            <div class="portfolio-card-date">Aug 2024 - Sep 2024</div>
+            <span class="portfolio-card-keterangan keterangan-personal"
+              >Personal Project</span
+            >
+            <p class="portfolio-card-description">
+              E-commerce website themed around Coca-Cola branding with full
+              product listing, cart, and order management.
+            </p>
+            <div class="portfolio-card-tech">
+              <span class="tech-badge tech-html"
+                ><i class="fab fa-html5"></i> HTML</span
+              >
+              <span class="tech-badge tech-bootstrap"
+                ><i class="fab fa-bootstrap"></i> Bootstrap</span
+              >
+              <span class="tech-badge tech-js"
+                ><i class="fab fa-js"></i> JavaScript</span
+              >
+              <span class="tech-badge tech-php"
+                ><i class="fab fa-php"></i> PHP</span
+              >
+            </div>
+            <div class="portfolio-card-links">
+              <a
+                href="https://github.com/Nugrahhadi/Coca-Cola-Website.git"
+                class="card-btn card-btn-primary"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i> Source
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 10 · Maggenzim · Personal -->
+        <div
+          class="portfolio-card"
+          data-category="web"
+          data-project-id="maggenzim"
+        >
+          <div class="portfolio-card-image">
+            <div
+              class="portfolio-magnify"
+              onclick="openImageModal('img/website/Maggenzim.webp')"
+            >
+              <i class="fas fa-search-plus"></i>
+            </div>
+            <img src="img/website/Maggenzim.webp" alt="Maggenzim" />
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="portfolio-card-title">
+              Maggenzim
+              <span class="portfolio-card-category">Website</span>
+            </h3>
+            <div class="portfolio-card-date">Jul 2025 - Aug 2025</div>
+            <span class="portfolio-card-keterangan keterangan-personal"
+              >Personal Project</span
+            >
+            <p class="portfolio-card-description">
+              A personal project exploring bio-enzyme product management and
+              distribution workflows, built with Laravel.
+            </p>
+            <div class="portfolio-card-tech">
+              <span class="tech-badge tech-laravel"
+                ><i class="fab fa-laravel"></i> Laravel</span
+              >
+              <span class="tech-badge tech-inertia"
+                ><i class="fas fa-layer-group"></i> Inertia</span
+              >
+            </div>
+            <div class="portfolio-card-links">
+              <a href="#" class="card-btn card-btn-primary" target="_blank">
+                <i class="fas fa-globe"></i> Live Demo
+              </a>
+              <a href="#" class="card-btn card-btn-primary" target="_blank">
+                <i class="fab fa-github"></i> Source
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /page 2 -->
+
+      <!-- Photography Portfolio Section -->
+      <div id="photography-container" class="portfolio-container">
+        <div class="portfolio-grid-photo">
+          <!-- Photography Projects -->
+          <div
+            class="portfolio-item"
+            data-category="photo"
+            data-modal="foodModal"
+          >
+            <img src="img/gallery/Food/kimchi.png" alt="Food Photography" />
+            <div class="portfolio-category">Food</div>
+            <div class="portfolio-overlay">
+              <h3>Culinary Showcase</h3>
+              <p>Food Photography</p>
+            </div>
+          </div>
+
+          <div
+            class="portfolio-item"
+            data-category="photo"
+            data-modal="productModal"
+          >
+            <img
+              src="img/gallery/photo-product/1.jpg"
+              alt="Product Photography"
+            />
+            <div class="portfolio-category">Product</div>
+            <div class="portfolio-overlay">
+              <h3>Product Showcase</h3>
+              <p>Product Photography</p>
+            </div>
+          </div>
+
+          <div
+            class="portfolio-item"
+            data-category="photo"
+            data-modal="modelModal"
+          >
+            <img
+              src="img/gallery/photo-model/boxing.png"
+              alt="Model Photography"
+            />
+            <div class="portfolio-category">Model</div>
+            <div class="portfolio-overlay">
+              <h3>Portrait Collection</h3>
+              <p>Model Photography</p>
+            </div>
+          </div>
+
+          <div
+            class="portfolio-item"
+            data-category="photo"
+            data-modal="natureModal"
+          >
+            <img src="img/gallery/nature/3.jpg" alt="Nature Photography" />
+            <div class="portfolio-category">Nature</div>
+            <div class="portfolio-overlay">
+              <h3>Outdoor Landscapes</h3>
+              <p>Nature Photography</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Photo Buttons -->
-      <section id="photos">
-        <div>
-          <button class="photo-btn" data-type="product">Product</button>
-          <button class="photo-btn" data-type="model">Model</button>
-          <button class="photo-btn" data-type="food">Food</button>
-          <button class="photo-btn" data-type="nature">Nature</button>
-        </div>
-      </section>
-
-      <!-- Modal -->
-      <div id="photoModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <div id="photoGallery"></div>
-        </div>
+      <!-- Simple Pagination -->
+      <div class="pagination-simple">
+        <div class="page-item active" data-page="1">1</div>
+        <div class="page-item" data-page="2">2</div>
       </div>
     </section>
-    <!-- Full gallery Section Start-->
+
+    <!-- Modal untuk menampilkan gambar penuh -->
+    <div id="imageModal" class="image-modal">
+      <span class="close" onclick="closeImageModal()">&times;</span>
+      <img class="image-modal-content" alt="" id="fullImage" />
+    </div>
+
+    <!-- Modals for Photography portfolios -->
+    <div id="foodModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Food Photography</h3>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div class="modal-gallery">
+            <img src="img/gallery/Food/kimchi.png" alt="Kimchi" />
+            <img src="img/gallery/Food/keripik.png" alt="Chips" />
+            <img src="img/gallery/Food/spageti.png" alt="Spagheti" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Product Photography</h3>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div class="modal-gallery">
+            <img src="img/gallery/photo-product/1.jpg" alt="Serum" />
+            <img src="img/gallery/photo-product/olate.png" alt="Olatte" />
+            <img src="img/gallery/photo-product/parfum.png" alt="Parfum" />
+            <img src="img/gallery/photo-product/shirt.png" alt="Shirt" />
+            <img src="img/gallery/photo-product/fashion.webp" alt="Fashion" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modelModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Model Photography</h3>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div class="modal-gallery">
+            <img src="img/gallery/photo-model/boxing.png" alt="Atlet-Boxing" />
+            <img
+              src="img/gallery/photo-model/model-fashion.webp"
+              alt="Fashion Model"
+            />
+            <img src="img/gallery/photo-model/model-via.webp" alt="Via" />
+            <img src="img/gallery/photo-model/model-karin.webp" alt="Karin" />
+            <img src="img/gallery/photo-model/model-radit.webp" alt="Radit" />
+            <img src="img/gallery/photo-model/model-tata.webp" alt="Tata" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="natureModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Nature Photography</h3>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div class="modal-gallery">
+            <img src="img/gallery/nature/3.jpg" alt="Nature" />
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Contact Start -->
     <section id="contact" class="contact-section">
@@ -453,53 +2133,219 @@
         });
       });
 
-      document.addEventListener("DOMContentLoaded", () => {
-        const photos = {
-          product: [
-            "img/gallery/1.jpg",
-            "img/gallery/olate.png",
-            "img/gallery/parfum.png",
-          ],
-          model: [
-            "img/gallery/fashion.png",
-            "img/gallery/boxing.png",
-            "img/gallery/shirt.png",
-          ],
-          food: [
-            "img/gallery/spageti.png",
-            "img/gallery/kimchi.png",
-            "img/gallery/keripik.png",
-          ],
-          nature: [
-            "https://via.placeholder.com/300x400?text=Nature+1",
-            "https://via.placeholder.com/300x400?text=Nature+2",
-            "https://via.placeholder.com/300x400?text=Nature+3",
-          ],
-        };
+      // Portfolio Tabs & Pagination - Index Page
+      document.addEventListener("DOMContentLoaded", function () {
+        // Filter tabs
+        const portfolioTabs = document.querySelectorAll(".portfolio-tab");
+        const portfolioCards = document.querySelectorAll(".portfolio-card");
+        const photographyContainer = document.getElementById(
+          "photography-container",
+        );
 
-        const modal = document.getElementById("photoModal");
-        const closeBtn = modal.querySelector(".close");
-        const photoGallery = document.getElementById("photoGallery");
+        // Pagination
+        const paginationItems = document.querySelectorAll(
+          ".pagination-simple .page-item",
+        );
+        const portfolioPages = document.querySelectorAll(".portfolio-page");
 
-        document.querySelectorAll(".photo-btn").forEach((button) => {
-          button.addEventListener("click", () => {
-            const type = button.getAttribute("data-type");
-            photoGallery.innerHTML = photos[type]
-              .map((src) => `<img src="${src}" alt="${type} photo">`)
-              .join("");
-            modal.style.display = "block";
+        // Filter functionality
+        portfolioTabs.forEach((tab) => {
+          tab.addEventListener("click", function () {
+            // Remove active class from all tabs
+            portfolioTabs.forEach((t) => t.classList.remove("active"));
+
+            // Add active class to clicked tab
+            this.classList.add("active");
+
+            const filter = this.getAttribute("data-filter");
+
+            // Show items only matching the selected category
+            portfolioCards.forEach((card) => {
+              const category = card.getAttribute("data-category");
+
+              if (filter === category) {
+                card.style.display = ""; // Use default display
+              } else {
+                card.style.display = "none";
+              }
+            });
+
+            // Handle photography container separately
+            if (filter === "photo") {
+              photographyContainer.style.display = "block";
+            } else {
+              photographyContainer.style.display = "none";
+            }
+
+            // Reset pagination to page 1 when changing filters
+            paginationItems.forEach((item) => {
+              item.classList.remove("active");
+              if (item.getAttribute("data-page") === "1") {
+                item.classList.add("active");
+              }
+            });
+
+            portfolioPages.forEach((page) => {
+              page.classList.remove("active");
+              if (page.getAttribute("data-page") === "1") {
+                page.classList.add("active");
+              }
+            });
           });
         });
 
-        closeBtn.addEventListener("click", () => {
-          modal.style.display = "none";
+        // Pagination functionality
+        paginationItems.forEach((item) => {
+          item.addEventListener("click", function () {
+            const pageNumber = this.getAttribute("data-page");
+
+            // Update active page button
+            paginationItems.forEach((p) => p.classList.remove("active"));
+            this.classList.add("active");
+
+            // Show selected page, hide others
+            portfolioPages.forEach((page) => {
+              page.classList.remove("active");
+              if (page.getAttribute("data-page") === pageNumber) {
+                page.classList.add("active");
+              }
+            });
+
+            // Scroll to top of portfolio section smoothly
+            document.querySelector("#portfolio").scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          });
         });
 
-        window.addEventListener("click", (event) => {
+        // ── Card click → project detail page ─────────────────────────────
+        document
+          .querySelectorAll(".portfolio-card[data-project-id]")
+          .forEach(function (card) {
+            card.addEventListener("click", function (e) {
+              // Don't navigate when clicking a link or button inside the card
+              if (e.target.closest("a, button, .portfolio-magnify")) return;
+              const id = card.getAttribute("data-project-id");
+              window.location.href = "project-detail.html?id=" + id;
+            });
+          });
+
+        // Prevent magnify icon from triggering card navigation
+        document
+          .querySelectorAll(".portfolio-magnify")
+          .forEach(function (icon) {
+            icon.addEventListener("click", function (e) {
+              e.stopPropagation();
+            });
+          });
+
+        // Image modal functionality
+        function openImageModal(imgSrc) {
+          const modal = document.getElementById("imageModal");
+          const modalImg = document.getElementById("fullImage");
+
+          modal.style.display = "block";
+          modalImg.src = imgSrc;
+
+          // Prevent click event from propagating to parent elements
+          event.stopPropagation();
+        }
+
+        function closeImageModal() {
+          document.getElementById("imageModal").style.display = "none";
+        }
+
+        // Expose these functions to global scope so they can be used in inline onclick handlers
+        window.openImageModal = openImageModal;
+        window.closeImageModal = closeImageModal;
+
+        // Close modal when clicking outside the image
+        window.addEventListener("click", function (event) {
+          const modal = document.getElementById("imageModal");
           if (event.target === modal) {
             modal.style.display = "none";
           }
         });
+
+        // Photography Modal functionality
+        document
+          .querySelectorAll(".portfolio-item[data-modal]")
+          .forEach((item) => {
+            item.addEventListener("click", () => {
+              const modalId = item.getAttribute("data-modal");
+              if (modalId) {
+                document.getElementById(modalId).style.display = "block";
+              }
+            });
+          });
+
+        // Close buttons for modals
+        document.querySelectorAll(".close").forEach((closeBtn) => {
+          closeBtn.addEventListener("click", () => {
+            closeBtn.closest(".modal").style.display = "none";
+          });
+        });
+
+        // Close modals when clicking outside
+        window.addEventListener("click", (event) => {
+          const modals = document.querySelectorAll(".modal");
+          modals.forEach((modal) => {
+            if (event.target === modal) {
+              modal.style.display = "none";
+            }
+          });
+        });
+
+        // Experience Tab Functionality
+        const experienceTabs = document.querySelectorAll(".experience-tab");
+        const experienceTimelines = document.querySelectorAll(
+          ".experience-timeline",
+        );
+
+        experienceTabs.forEach((tab) => {
+          tab.addEventListener("click", function () {
+            const tabName = this.getAttribute("data-tab");
+
+            // Remove active class from all tabs
+            experienceTabs.forEach((t) => t.classList.remove("active"));
+            // Add active class to clicked tab
+            this.classList.add("active");
+
+            // Hide all timelines
+            experienceTimelines.forEach((timeline) => {
+              timeline.classList.remove("active-timeline");
+            });
+
+            // Show the selected timeline
+            document.getElementById(tabName).classList.add("active-timeline");
+          });
+        });
+
+        // Experience Modal (Hybrid) Functionality
+        document
+          .querySelectorAll(".timeline-item[data-exp-modal]")
+          .forEach((item) => {
+            item.addEventListener("click", () => {
+              const modalId = item.getAttribute("data-exp-modal");
+              if (modalId) {
+                document.getElementById(modalId).classList.add("active");
+                document.body.style.overflow = "hidden";
+              }
+            });
+          });
+
+        document
+          .querySelectorAll(".exp-modal-close, .exp-modal-overlay")
+          .forEach((el) => {
+            el.addEventListener("click", function () {
+              const modal = this.closest(".exp-modal");
+              if (modal) {
+                modal.classList.remove("active");
+                document.body.style.overflow = "";
+              }
+            });
+          });
       });
     </script>
 

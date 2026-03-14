@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Detail — Portfolio</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Iconify (for Tailwind, etc.) -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <link rel="stylesheet" href="project-detail.css" />
+  </head>
+
+  <body>
+    <!-- ── Back Button ──────────────────────────── -->
+    <a href="index.html#portfolio" class="back-button" id="backBtn">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M10 19l-7-7m0 0l7-7m-7 7h18"
+        />
+      </svg>
+      <span>Back to Portfolio</span>
+    </a>
+
+    <!-- ── Main content rendered by JS ────────── -->
+    <div class="container">
+      <div class="detail-wrapper" id="detailWrapper">
+        <!-- Placeholder while loading -->
+        <div class="detail-placeholder" id="loadingPlaceholder">
+          <div class="placeholder-icon">
+            <i class="fas fa-spinner fa-spin"></i>
+          </div>
+          <p>Loading project…</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         PROJECT DATA — add / edit projects here
+    ═══════════════════════════════════════════ -->
+    <script>
+      /**
+       * PROJECT DATABASE
+       * Each key is the project id used in the URL: ?id=<key>
+       *
+       * images.hero   — path to the main (large) image
+       * images.thumbs — array of additional screenshot paths
+       * tech          — array of { name, iconHtml, colorClass }
+       * role.intro    — short paragraph(s) describing the project context
+       * role.tasks    — bullet list of specific contributions
+       * links.website — live URL (use "#" if not available)
+       * links.source  — GitHub URL (use "#" if not available)
+       */
+      const PROJECTS = {
+        /* ─── Website Projects ─────────────────── */
+
+        archipelago: {
+          title: "PT Archipelago Media Komunikasi",
+          category: "Website",
+          keterangan: "Client Project",
+          date: "Jan 2025 – Feb 2025",
+          description:
+            "Company profile website for a media company in South Tangerang, serving as the company's professional digital face.",
+          images: {
+            hero: "img/website/archipelago.png",
+            thumbs: ["img/website/archipelago.png"],
+          },
+          tech: [
+            {
+              name: "HTML5",
+              iconHtml: '<i class="fab fa-html5"></i>',
+              colorClass: "html",
+            },
+            {
+              name: "CSS3",
+              iconHtml: '<i class="fab fa-css3"></i>',
+              colorClass: "css",
+            },
+            {
+              name: "JavaScript",
+              iconHtml: '<i class="fab fa-js"></i>',
+              colorClass: "js",
+            },
+          ],
+          role: {
+            intro: [
+              "I was the sole developer responsible for designing and building the entire company profile website from scratch for PT Archipelago Media Komunikasi.",
+            ],
+            tasks: [
+              "Designed the overall UI layout to reflect the company's professional brand identity.",
+              "Implemented a fully responsive layout using HTML5 semantic elements and modern CSS Flexbox/Grid.",
+              "Built smooth scroll animations and interactive navigation to improve user experience.",
+              "Optimised image assets and page load performance for production deployment.",
+            ],
+          },
+          links: {
+            website: "https://nugrahhadi.github.io/Archipelagocs/",
+            source: "https://github.com/Nugrahhadi/Archipelagocs.git",
+          },
+        },
+
+        yahayu: {
+          title: "YAHAYU — Brazilian Tourist Destinations",
+          category: "Website",
+          keterangan: "University Project",
+          date: "Nov 2024 – Dec 2024",
+          description:
+            "A full-stack travel booking platform that makes it easy to discover and book tickets for popular tourist attractions and hidden gems in Brazil, complete with booking and payment features.",
+          images: {
+            hero: "img/website/yahayu.png",
+            thumbs: ["img/website/yahayu.png"],
+          },
+          tech: [
+            {
+              name: "HTML5",
+              iconHtml: '<i class="fab fa-html5"></i>',
+              colorClass: "html",
+            },
+            {
+              name: "CSS3",
+              iconHtml: '<i class="fab fa-css3"></i>',
+              colorClass: "css",
+            },
+            {
+              name: "JavaScript",
+              iconHtml: '<i class="fab fa-js"></i>',
+              colorClass: "js",
+            },
+            {
+              name: "PHP",
+              iconHtml: '<i class="fab fa-php"></i>',
+              colorClass: "php",
+            },
+            {
+              name: "MySQL",
+              iconHtml: '<i class="fas fa-database"></i>',
+              colorClass: "mysql",
+            },
+          ],
+          role: {
+            intro: [
+              "I developed both the front-end and back-end of the YAHAYU platform as the primary full-stack developer.",
+            ],
+            tasks: [
+              "Designed and built the multi-page responsive front-end with CSS animations and interactive components.",
+              "Developed a PHP back-end with MVC architecture to handle user authentication, ticket booking, and order management.",
+              "Designed and implemented the MySQL relational database schema including users, destinations, tickets, and transactions.",
+              "Integrated a payment flow UI with order confirmation and receipt generation.",
+            ],
+          },
+          links: {
+            website: "#",
+            source: "https://github.com/Nugrahhadi/YAHAYU.git",
+          },
+        },
+
+        smartparking: {
+          title: "Smart Parking System",
+          category: "Website",
+          keterangan: "University Project",
+          date: "April 2025",
+          description:
+            "A modern, real-time smart parking management system built with React and TailwindCSS that helps drivers locate and reserve parking spots digitally — with a Python-powered camera module for automatic license plate detection and tracking.",
+          images: {
+            hero: "img/website/SmartParking.png",
+            thumbs: ["img/website/SmartParking.png"],
+          },
+          tech: [
+            {
+              name: "React",
+              iconHtml: '<i class="fab fa-react"></i>',
+              colorClass: "react",
+            },
+            {
+              name: "TailwindCSS",
+              iconHtml:
+                '<iconify-icon icon="simple-icons:tailwindcss" width="20" height="20" style="vertical-align:middle"></iconify-icon>',
+              colorClass: "tailwind",
+            },
+            {
+              name: "JavaScript",
+              iconHtml: '<i class="fab fa-js"></i>',
+              colorClass: "js",
+            },
+            {
+              name: "MySQL",
+              iconHtml: '<i class="fas fa-database"></i>',
+              colorClass: "mysql",
+            },
+            {
+              name: "Python",
+              iconHtml: '<i class="fab fa-python"></i>',
+              colorClass: "python",
+            },
+          ],
+          role: {
+            intro: [
+              "I built the complete Smart Parking System web application as both designer and developer, including a Python-based license plate recognition module.",
+            ],
+            tasks: [
+              "Architected the React component structure including real-time slot availability views.",
+              "Styled the entire interface using TailwindCSS utility classes for a consistent, responsive layout.",
+              "Developed interactive parking grid UI that reflects live slot status (available / occupied / reserved).",
+              "Implemented MySQL database schema for storing vehicle records and parking session history.",
+              "Built a Python camera tracking module to detect and read license plate numbers using OpenCV and trained a custom dataset for recognition accuracy.",
+            ],
+          },
+          links: {
+            website: "#",
+            source: "https://github.com/Nugrahhadi/smart-parking.git",
+          },
+        },
+
+        ricocapital: {
+          title: "Ricocapital",
+          category: "Website",
+          keterangan: "Client Project",
+          date: "Jun 2024 – Aug 2024",
+          description:
+            "A professional full-stack financial services website for Ricocapital, featuring investment product pages, integrated online payment via Midtrans, and a modern SPA architecture built with Laravel Inertia and TypeScript.",
+          images: {
+            hero: "img/website/Ricocapital.webp",
+            thumbs: ["img/website/Ricocapital.webp"],
+          },
+          tech: [
+            {
+              name: "Laravel",
+              iconHtml: '<i class="fab fa-laravel"></i>',
+              colorClass: "laravel",
+            },
+            {
+              name: "Inertia.js",
+              iconHtml: '<i class="fas fa-layer-group"></i>',
+              colorClass: "inertia",
+            },
+            {
+              name: "TailwindCSS",
+              iconHtml:
+                '<iconify-icon icon="simple-icons:tailwindcss" width="20" height="20" style="vertical-align:middle"></iconify-icon>',
+              colorClass: "tailwind",
+            },
+            {
+              name: "TypeScript",
+              iconHtml:
+                '<iconify-icon icon="simple-icons:typescript" width="20" height="20" style="vertical-align:middle"></iconify-icon>',
+              colorClass: "typescript",
+            },
+            {
+              name: "MySQL",
+              iconHtml: '<i class="fas fa-database"></i>',
+              colorClass: "mysql",
+            },
+            {
+              name: "Midtrans",
+              iconHtml: '<i class="fas fa-credit-card"></i>',
+              colorClass: "midtrans",
+            },
+          ],
+          role: {
+            intro: [
+              "I was the primary full-stack developer for the Ricocapital website, building a modern SPA using Laravel as the back-end and Inertia.js with TypeScript on the front-end.",
+            ],
+            tasks: [
+              "Architected the back-end with Laravel including RESTful routing, authentication, and investment product management.",
+              "Built the front-end as a seamless SPA using Inertia.js, eliminating full-page reloads for a smooth user experience.",
+              "Designed all UI components with TailwindCSS to match the client's professional financial brand identity.",
+              "Typed the entire front-end codebase with TypeScript for improved maintainability and type safety.",
+              "Integrated Midtrans payment gateway for secure online transactions with real-time webhook status handling.",
+              "Configured MySQL relational database schema for products, users, transactions, and content pages.",
+            ],
+          },
+          links: {
+            website: "https://ricocapital.id/",
+            source: "#",
+          },
+        },
+
+        cocacola: {
+          title: "Coca-Cola Commerce",
+          category: "Website",
+          keterangan: "Personal Project",
+          date: "Aug 2024 – Sep 2024",
+          description:
+            "An e-commerce website themed around Coca-Cola branding, with full product listing, shopping cart, and order management functionality.",
+          images: {
+            hero: "img/website/coca-cola.png",
+            thumbs: ["img/website/coca-cola.png"],
+          },
+          tech: [
+            {
+              name: "HTML5",
+              iconHtml: '<i class="fab fa-html5"></i>',
+              colorClass: "html",
+            },
+            {
+              name: "Bootstrap",
+              iconHtml: '<i class="fab fa-bootstrap"></i>',
+              colorClass: "bs",
+            },
+            {
+              name: "JavaScript",
+              iconHtml: '<i class="fab fa-js"></i>',
+              colorClass: "js",
+            },
+            {
+              name: "PHP",
+              iconHtml: '<i class="fab fa-php"></i>',
+              colorClass: "php",
+            },
+          ],
+          role: {
+            intro: [
+              "I built the full-stack commerce site from scratch, handling both UI development and back-end logic.",
+            ],
+            tasks: [
+              "Designed a branded UI using Bootstrap 5 components customised with Coca-Cola's red and white palette.",
+              "Built a PHP back-end for product CRUD operations, cart session management, and order processing.",
+              "Implemented authentication (login/register) with role-based access for admin and customers.",
+              "Created an admin dashboard for managing product inventory and viewing order history.",
+            ],
+          },
+          links: {
+            website: "#",
+            source: "https://github.com/Nugrahhadi/Coca-Cola-Website.git",
+          },
+        },
+
+        spl: {
+          title: "Matrix & SPL Solver",
+          category: "Website",
+          keterangan: "University Project",
+          date: "Oct 2024 – Nov 2024",
+          description:
+            "A browser-based mathematical tool that solves systems of linear equations (SPL) and performs matrix operations with step-by-step solution display.",
+          images: {
+            hero: "img/website/spl.png",
+            thumbs: ["img/website/spl.png"],
+          },
+          tech: [
+            {
+              name: "HTML5",
+              iconHtml: '<i class="fab fa-html5"></i>',
+              colorClass: "html",
+            },
+            {
+              name: "CSS3",
+              iconHtml: '<i class="fab fa-css3"></i>',
+              colorClass: "css",
+            },
+            {
+              name: "JavaScript",
+              iconHtml: '<i class="fab fa-js"></i>',
+              colorClass: "js",
+            },
+          ],
+          role: {
+            intro: [
+              "I designed and developed this educational mathematics tool entirely in vanilla JavaScript without any external libraries.",
+            ],
+            tasks: [
+              "Implemented Gaussian elimination and back-substitution algorithms for solving linear equation systems.",
+              "Built a dynamic matrix input UI that resizes based on the user-selected dimensions.",
+              "Displayed each computation step clearly so users can follow and understand the solution process.",
+              "Ensured full browser compatibility and zero-dependency deployment.",
+            ],
+          },
+          links: {
+            website: "https://nugrahhadi.github.io/Proyek-Aljabar-Linear/",
+            source: "https://github.com/Nugrahhadi/Proyek-Aljabar-Linear.git",
+          },
+        },
+
+        zetta: {
+          title: "PT Zetta Kreatif Indonesia",
+          category: "Website",
+          keterangan: "Client Project",
+          date: "Jun 2023 – Jul 2023",
+          description:
+            "Company profile website for a creative agency, built on WordPress to showcase their portfolio, services, and team.",
+          images: {
+            hero: "img/website/zetta.png",
+            thumbs: ["img/website/zetta.png"],
+          },
+          tech: [
+            {
+              name: "WordPress",
+              iconHtml: '<i class="fab fa-wordpress"></i>',
+              colorClass: "wp",
+            },
+          ],
+          role: {
+            intro: [
+              "I built the company profile site for PT Zetta Kreatif Indonesia using WordPress as the sole developer.",
+            ],
+            tasks: [
+              "Set up WordPress from scratch including hosting configuration and CMS setup.",
+              "Customised a page‑builder theme to represent the agency's creative identity.",
+              "Added portfolio galleries, service pages, and a team section with the client's content.",
+              "Configured contact forms, Google Maps embed, and basic SEO meta tags.",
+            ],
+          },
+          links: {
+            website: "#",
+            source: "#",
+          },
+        },
+
+        tokopinjam: {
+          title: "Toko Pinjam",
+          category: "Website",
+          keterangan: "Client Project",
+          date: "Jul 2025 – Aug 2025",
+          description:
+            "A rental marketplace platform that connects borrowers and lenders for everyday items, built with a modern Laravel + Inertia SPA stack.",
+          images: {
+            hero: "img/website/toko-pinjam.webp",
+            thumbs: [],
+          },
+          tech: [
+            {
+              name: "Laravel",
+              iconHtml: '<i class="fab fa-laravel"></i>',
+              colorClass: "laravel",
+            },
+            {
+              name: "Inertia.js",
+              iconHtml: '<i class="fas fa-layer-group"></i>',
+              colorClass: "inertia",
+            },
+            {
+              name: "TailwindCSS",
+              iconHtml:
+                '<iconify-icon icon="simple-icons:tailwindcss" width="20" height="20" style="vertical-align:middle"></iconify-icon>',
+              colorClass: "tailwind",
+            },
+          ],
+          role: {
+            intro: [
+              "I developed the Toko Pinjam platform as the primary full-stack developer.",
+            ],
+            tasks: [
+              "Built the Laravel back-end with authentication, item listing, and rental request management.",
+              "Implemented Inertia.js front-end for a seamless SPA experience.",
+              "Designed the UI with TailwindCSS for a clean, card-based rental browsing layout.",
+            ],
+          },
+          links: {
+            website: "https://tokopinjam.com/",
+            source: "https://github.com/Nugrahhadi/Toko-Pinjam-V1.git",
+          },
+        },
+
+        kalanoia: {
+          title: "Kalanoia Coffee",
+          category: "Website",
+          keterangan: "Client Project",
+          date: "2025",
+          description:
+            "A landing page and online catalog website for a local coffee brand, showcasing their menu, story, and locations.",
+          images: {
+            hero: "img/website/kalanoia.png",
+            thumbs: [],
+          },
+          tech: [
+            {
+              name: "HTML5",
+              iconHtml: '<i class="fab fa-html5"></i>',
+              colorClass: "html",
+            },
+            {
+              name: "CSS3",
+              iconHtml: '<i class="fab fa-css3"></i>',
+              colorClass: "css",
+            },
+            {
+              name: "JavaScript",
+              iconHtml: '<i class="fab fa-js"></i>',
+              colorClass: "js",
+            },
+          ],
+          role: {
+            intro: [
+              "I designed and built the Kalanoia Coffee website as the sole front-end developer.",
+            ],
+            tasks: [
+              "Designed a warm, brand-aligned UI reflecting the coffee shop's identity.",
+              "Built a fully responsive multi-section landing page using semantic HTML5 and CSS3.",
+              "Implemented smooth scroll interactions and an interactive menu catalog with vanilla JavaScript.",
+            ],
+          },
+          links: {
+            website: "#",
+            source: "#",
+          },
+        },
+
+        maggenzim: {
+          title: "Maggenzim",
+          category: "Website",
+          keterangan: "Personal Project",
+          date: "Jul 2025 – Aug 2025",
+          description:
+            "A personal project exploring bio-enzyme product management and distribution workflows, built with Laravel and Inertia.",
+          images: {
+            hero: "img/website/Maggenzim.webp",
+            thumbs: [],
+          },
+          tech: [
+            {
+              name: "Laravel",
+              iconHtml: '<i class="fab fa-laravel"></i>',
+              colorClass: "laravel",
+            },
+            {
+              name: "Inertia.js",
+              iconHtml: '<i class="fas fa-layer-group"></i>',
+              colorClass: "inertia",
+            },
+          ],
+          role: {
+            intro: [
+              "I built Maggenzim as a personal side project to manage bio-enzyme product data.",
+            ],
+            tasks: [
+              "Designed the product catalog and inventory management data model.",
+              "Built the back-end with Laravel and front-end with Inertia.js.",
+              "Implemented basic CRUD operations for product listing and order tracking.",
+            ],
+          },
+          links: {
+            website: "#",
+            source: "#",
+          },
+        },
+
+        /* ─── UI/UX Projects (add your own) ───── */
+        /* Example template:
+        myuiux: {
+          title: "My UI/UX Project",
+          category: "UI/UX",
+          date: "Month Year",
+          description: "Short description.",
+          images: {
+            hero: "img/uiux/hero.png",
+            thumbs: ["img/uiux/s1.png", "img/uiux/s2.png"],
+          },
+          tech: [
+            { name: "Figma", iconHtml: '<i class="fab fa-figma"></i>', colorClass: "figma" },
+          ],
+          role: {
+            intro: ["Context paragraph."],
+            tasks: ["Task 1", "Task 2"],
+          },
+          links: { website: "#", source: "#" },
+        },
+        */
+      };
+    </script>
+
+    <script>
+      (function () {
+        /**
+         * Read the ?id= param from the URL and render the matching project.
+         */
+        function getProjectId() {
+          const params = new URLSearchParams(window.location.search);
+          return params.get("id") || "";
+        }
+
+        /**
+         * Build the tech-item HTML for one technology entry.
+         * @param {{ name: string, iconHtml: string, colorClass: string }} tech
+         */
+        function renderTechItem(tech) {
+          return `
+            <div class="tech-item">
+              <span class="tech-item-icon ${tech.colorClass}">${tech.iconHtml}</span>
+              <span class="tech-item-name">${tech.name}</span>
+            </div>`;
+        }
+
+        /**
+         * Build the thumbnail HTML for one image path.
+         * @param {string} src
+         * @param {number} index
+         * @param {boolean} isActive
+         */
+        function renderThumb(src, index, isActive) {
+          return `
+            <div class="gallery-thumb${isActive ? " active" : ""}"
+                 data-src="${src}"
+                 data-index="${index}"
+                 onclick="switchHero(this)"
+                 title="Screenshot ${index + 1}">
+              <img src="${src}" alt="Screenshot ${index + 1}" loading="lazy" />
+            </div>`;
+        }
+
+        /**
+         * Render the role column content.
+         * @param {{ intro: string[], tasks: string[] }} role
+         */
+        function renderRole(role) {
+          const intros = (role.intro || []).map((p) => `<p>${p}</p>`).join("");
+          const tasks = (role.tasks || []).map((t) => `<li>${t}</li>`).join("");
+          return `
+            <div class="role-text">
+              ${intros}
+              ${tasks ? `<ul>${tasks}</ul>` : ""}
+            </div>`;
+        }
+
+        /**
+         * Main render function.
+         */
+        function render() {
+          const id = getProjectId();
+          const wrapper = document.getElementById("detailWrapper");
+          const project = PROJECTS[id];
+
+          /* ── 404 state ── */
+          if (!project) {
+            wrapper.innerHTML = `
+              <div class="detail-placeholder">
+                <div class="placeholder-icon"><i class="fas fa-search"></i></div>
+                <p>Project <strong>"${id || "unknown"}"</strong> not found.</p>
+                <p style="margin-top:8px;font-size:0.875rem;">
+                  <a href="index.html#portfolio" style="color:#ad5aff;text-decoration:none;">← Back to Portfolio</a>
+                </p>
+              </div>`;
+            document.title = "Project Not Found";
+            return;
+          }
+
+          /* ── Update page title ── */
+          document.title = `${project.title} — Portfolio`;
+
+          /* ── Build all image sources (hero first, then thumbs) ── */
+          const allImages = [
+            project.images.hero,
+            ...(project.images.thumbs || []),
+          ];
+          // Deduplicate while preserving order
+          const uniqueImages = [
+            ...new Map(allImages.map((s) => [s, s])).values(),
+          ];
+
+          /* ── Thumbnails HTML ── */
+          const thumbsHtml =
+            uniqueImages.length > 1
+              ? `<div class="gallery-thumbs">
+                  ${uniqueImages.map((src, i) => renderThumb(src, i, i === 0)).join("")}
+                </div>`
+              : ""; // hide strip if only one image
+
+          /* ── Tech list HTML ── */
+          const techHtml = project.tech.map(renderTechItem).join("");
+
+          /* ── Button visibility helpers ── */
+          const hasWebsite =
+            project.links.website && project.links.website !== "#";
+          const hasSource =
+            project.links.source && project.links.source !== "#";
+
+          const websiteBtn = `
+            <a href="${project.links.website || "#"}"
+               class="action-btn action-btn-primary"
+               ${hasWebsite ? 'target="_blank" rel="noopener"' : ""}
+               title="${hasWebsite ? "Open live site" : "Live demo not available"}">
+              <i class="fas fa-globe"></i> Live Demo
+            </a>`;
+
+          const sourceBtn = hasSource
+            ? `<a href="${project.links.source}"
+               class="action-btn action-btn-secondary"
+               target="_blank" rel="noopener"
+               title="View source code">
+              <i class="fab fa-github"></i> Source Code
+            </a>`
+            : "";
+
+          /* ── Keterangan badge ── */
+          const keteranganClass =
+            {
+              "Client Project": "keterangan-client",
+              "University Project": "keterangan-university",
+              "Personal Project": "keterangan-personal",
+            }[project.keterangan] || "";
+
+          const keteranganBadge = project.keterangan
+            ? `<span class="project-keterangan-badge ${keteranganClass}">${project.keterangan}</span>`
+            : "";
+
+          /* ── Full page HTML ── */
+          wrapper.innerHTML = `
+            <!-- Section 1: Title -->
+            <section class="project-header">
+              <div class="project-meta">
+                <span class="project-category-badge">${project.category}</span>
+                ${keteranganBadge}
+                <span class="project-date">${project.date}</span>
+              </div>
+              <h1 class="project-title">${project.title}</h1>
+              <p class="project-description-lead">${project.description}</p>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <!-- Section 2: Gallery -->
+            <section class="gallery-section">
+              <div class="gallery-hero">
+                <img src="${project.images.hero}" alt="${project.title}" id="heroImage" />
+              </div>
+              ${thumbsHtml}
+            </section>
+
+            <div class="section-divider"></div>
+
+            <!-- Section 3: Details (2-col) -->
+            <section class="detail-section">
+              <div class="detail-grid">
+
+                <!-- Left: Tech Stack (MUST be first in DOM for mobile stacking order) -->
+                <div class="detail-col tech-col">
+                  <h2 class="detail-col-title">Technologies Used</h2>
+                  <div class="tech-list">${techHtml}</div>
+                </div>
+
+                <!-- Right: My Role -->
+                <div class="detail-col role-col">
+                  <h2 class="detail-col-title">My Role</h2>
+                  ${renderRole(project.role)}
+                </div>
+
+              </div>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <!-- Section 4: CTA Buttons -->
+            <section class="actions-section">
+              ${websiteBtn}
+              ${sourceBtn}
+            </section>
+          `;
+        }
+
+        /* ── Run on DOM ready ── */
+        document.addEventListener("DOMContentLoaded", render);
+      })();
+
+      /**
+       * Switch the hero image when a thumbnail is clicked.
+       * Exposed globally so the inline onclick="switchHero(this)" works.
+       */
+      function switchHero(thumbEl) {
+        const newSrc = thumbEl.getAttribute("data-src");
+
+        // Update hero
+        const hero = document.getElementById("heroImage");
+        if (hero) {
+          hero.style.opacity = "0";
+          hero.style.transition = "opacity 0.2s ease";
+          setTimeout(() => {
+            hero.src = newSrc;
+            hero.style.opacity = "1";
+          }, 200);
+        }
+
+        // Update active thumbnail
+        document.querySelectorAll(".gallery-thumb").forEach((t) => {
+          t.classList.remove("active");
+        });
+        thumbEl.classList.add("active");
+      }
+    </script>
+  </body>
+</html>
