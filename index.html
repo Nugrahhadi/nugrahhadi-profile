@@ -2143,7 +2143,6 @@
     </section>
     <!-- Contact End -->
 
-    <!--Footer Start-->
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
@@ -2182,9 +2181,7 @@
         </div>
       </div>
     </footer>
-    <!--Footer End-->
 
-    <!-- Script Start -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const navLinks = document.querySelectorAll(".nav-link");
@@ -2229,51 +2226,42 @@
         });
       });
 
-      // Portfolio Tabs & Pagination - Index Page
       document.addEventListener("DOMContentLoaded", function () {
-        // Filter tabs
         const portfolioTabs = document.querySelectorAll(".portfolio-tab");
         const portfolioCards = document.querySelectorAll(".portfolio-card");
         const photographyContainer = document.getElementById(
           "photography-container",
         );
 
-        // Pagination
         const paginationItems = document.querySelectorAll(
           ".pagination-simple .page-item",
         );
         const portfolioPages = document.querySelectorAll(".portfolio-page");
 
-        // Filter functionality
         portfolioTabs.forEach((tab) => {
           tab.addEventListener("click", function () {
-            // Remove active class from all tabs
             portfolioTabs.forEach((t) => t.classList.remove("active"));
 
-            // Add active class to clicked tab
             this.classList.add("active");
 
             const filter = this.getAttribute("data-filter");
 
-            // Show items only matching the selected category
             portfolioCards.forEach((card) => {
               const category = card.getAttribute("data-category");
 
               if (filter === category) {
-                card.style.display = ""; // Use default display
+                card.style.display = ""; 
               } else {
                 card.style.display = "none";
               }
             });
 
-            // Handle photography container separately
             if (filter === "photo") {
               photographyContainer.style.display = "block";
             } else {
               photographyContainer.style.display = "none";
             }
 
-            // Reset pagination to page 1 when changing filters
             paginationItems.forEach((item) => {
               item.classList.remove("active");
               if (item.getAttribute("data-page") === "1") {
@@ -2290,16 +2278,13 @@
           });
         });
 
-        // Pagination functionality
         paginationItems.forEach((item) => {
           item.addEventListener("click", function () {
             const pageNumber = this.getAttribute("data-page");
 
-            // Update active page button
             paginationItems.forEach((p) => p.classList.remove("active"));
             this.classList.add("active");
-
-            // Show selected page, hide others
+s
             portfolioPages.forEach((page) => {
               page.classList.remove("active");
               if (page.getAttribute("data-page") === pageNumber) {
@@ -2307,7 +2292,6 @@
               }
             });
 
-            // Scroll to top of portfolio section smoothly
             document.querySelector("#portfolio").scrollIntoView({
               behavior: "smooth",
               block: "start",
@@ -2315,19 +2299,16 @@
           });
         });
 
-        // ── Card click → project detail page ─────────────────────────────
         document
           .querySelectorAll(".portfolio-card[data-project-id]")
           .forEach(function (card) {
             card.addEventListener("click", function (e) {
-              // Don't navigate when clicking a link or button inside the card
               if (e.target.closest("a, button, .portfolio-magnify")) return;
               const id = card.getAttribute("data-project-id");
               window.location.href = "project-detail.html?id=" + id;
             });
           });
 
-        // Prevent magnify icon from triggering card navigation
         document
           .querySelectorAll(".portfolio-magnify")
           .forEach(function (icon) {
@@ -2336,7 +2317,6 @@
             });
           });
 
-        // Image modal functionality
         function openImageModal(imgSrc) {
           const modal = document.getElementById("imageModal");
           const modalImg = document.getElementById("fullImage");
@@ -2344,7 +2324,6 @@
           modal.style.display = "block";
           modalImg.src = imgSrc;
 
-          // Prevent click event from propagating to parent elements
           event.stopPropagation();
         }
 
@@ -2352,11 +2331,9 @@
           document.getElementById("imageModal").style.display = "none";
         }
 
-        // Expose these functions to global scope so they can be used in inline onclick handlers
         window.openImageModal = openImageModal;
         window.closeImageModal = closeImageModal;
 
-        // Close modal when clicking outside the image
         window.addEventListener("click", function (event) {
           const modal = document.getElementById("imageModal");
           if (event.target === modal) {
@@ -2364,7 +2341,6 @@
           }
         });
 
-        // Photography Modal functionality
         document
           .querySelectorAll(".portfolio-item[data-modal]")
           .forEach((item) => {
@@ -2376,14 +2352,12 @@
             });
           });
 
-        // Close buttons for modals
         document.querySelectorAll(".close").forEach((closeBtn) => {
           closeBtn.addEventListener("click", () => {
             closeBtn.closest(".modal").style.display = "none";
           });
         });
 
-        // Close modals when clicking outside
         window.addEventListener("click", (event) => {
           const modals = document.querySelectorAll(".modal");
           modals.forEach((modal) => {
@@ -2393,7 +2367,6 @@
           });
         });
 
-        // Experience Tab Functionality
         const experienceTabs = document.querySelectorAll(".experience-tab");
         const experienceTimelines = document.querySelectorAll(
           ".experience-timeline",
@@ -2403,22 +2376,17 @@
           tab.addEventListener("click", function () {
             const tabName = this.getAttribute("data-tab");
 
-            // Remove active class from all tabs
             experienceTabs.forEach((t) => t.classList.remove("active"));
-            // Add active class to clicked tab
             this.classList.add("active");
 
-            // Hide all timelines
             experienceTimelines.forEach((timeline) => {
               timeline.classList.remove("active-timeline");
             });
 
-            // Show the selected timeline
             document.getElementById(tabName).classList.add("active-timeline");
           });
         });
 
-        // Experience Modal (Hybrid) Functionality
         document
           .querySelectorAll(".timeline-item[data-exp-modal]")
           .forEach((item) => {
@@ -2450,7 +2418,5 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-
-    <!-- Script End-->
   </body>
 </html>
